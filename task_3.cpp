@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <map>
-#include <cpr/task_1.h>
+#include <cpr/cpr.h>
 
 int main ()
 {
@@ -33,12 +33,22 @@ int main ()
     if(user_input == "post")
     {
         std::string link_path = "http://httpbin.org/post";
+        std::vector<cpr::Pair> pairs = {{"t", "e"}, {"s", "t"}};
 
-        std::map<std::string, std::string> mp;
-        //cpr::Payload payload = cpr::Payload{mp};
+        for(int i = 0; i < input_data.size();)
+        {
+            std::string x = "none";
+            std::string y = "none";
 
-        //cpr::Response resp = cpr::Post(cpr::Url(link_path), cpr::Payload({payload}));
-        //std::cout << resp.text << std::endl;
+            x = input_data[i];
+            if(++i < input_data.size()) {y = input_data[i]; ++i;}
+            pairs.emplace_back(x.c_str(), y.c_str());
+        }
+
+        cpr::Payload payload = cpr::Payload(pairs.begin(), pairs.end());
+
+        cpr::Response resp = cpr::Post(cpr::Url(link_path), cpr::Payload({payload}));
+        std::cout << resp.text << std::endl;
     }
 
     return 0;

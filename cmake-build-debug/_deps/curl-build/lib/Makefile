@@ -47,19 +47,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2020.3\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "D:\installed_soft\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2020.3\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "D:\installed_soft\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Poizone\CLionProjects\HTTP_requests
+CMAKE_SOURCE_DIR = C:\Users\info\CLionProjects\HTTP_requests
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -76,31 +76,31 @@ list_install_components/fast: list_install_components
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	"C:\Program Files\JetBrains\CLion 2020.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	"D:\installed_soft\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	"C:\Program Files\JetBrains\CLion 2020.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	"D:\installed_soft\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	"C:\Program Files\JetBrains\CLion 2020.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
+	"D:\installed_soft\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	"C:\Program Files\JetBrains\CLion 2020.3\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
+	"D:\installed_soft\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2020.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"D:\installed_soft\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -110,7 +110,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2020.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"D:\installed_soft\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -120,25 +120,25 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	"C:\Program Files\JetBrains\CLion 2020.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	"D:\installed_soft\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	"C:\Program Files\JetBrains\CLion 2020.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	"D:\installed_soft\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug\CMakeFiles C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug\_deps\curl-build\lib\\CMakeFiles\progress.marks
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/curl-build/lib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug\CMakeFiles 0
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug\CMakeFiles C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug\_deps\curl-build\lib\\CMakeFiles\progress.marks
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/curl-build/lib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/curl-build/lib/clean
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/curl-build/lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -147,22 +147,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/curl-build/lib/preinstall
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/curl-build/lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/curl-build/lib/preinstall
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/curl-build/lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 _deps/curl-build/lib/CMakeFiles/libcurl.dir/rule:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/curl-build/lib/CMakeFiles/libcurl.dir/rule
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 _deps/curl-build/lib/CMakeFiles/libcurl.dir/rule
 .PHONY : _deps/curl-build/lib/CMakeFiles/libcurl.dir/rule
 
 # Convenience name for target.
@@ -171,7 +171,7 @@ libcurl: _deps/curl-build/lib/CMakeFiles/libcurl.dir/rule
 
 # fast build rule for target.
 libcurl/fast:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/build
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/build
 .PHONY : libcurl/fast
 
 altsvc.obj: altsvc.c.obj
@@ -179,7 +179,7 @@ altsvc.obj: altsvc.c.obj
 
 # target to build an object file
 altsvc.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/altsvc.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/altsvc.c.obj
 .PHONY : altsvc.c.obj
 
 altsvc.i: altsvc.c.i
@@ -187,7 +187,7 @@ altsvc.i: altsvc.c.i
 
 # target to preprocess a source file
 altsvc.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/altsvc.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/altsvc.c.i
 .PHONY : altsvc.c.i
 
 altsvc.s: altsvc.c.s
@@ -195,7 +195,7 @@ altsvc.s: altsvc.c.s
 
 # target to generate assembly for a file
 altsvc.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/altsvc.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/altsvc.c.s
 .PHONY : altsvc.c.s
 
 amigaos.obj: amigaos.c.obj
@@ -203,7 +203,7 @@ amigaos.obj: amigaos.c.obj
 
 # target to build an object file
 amigaos.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/amigaos.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/amigaos.c.obj
 .PHONY : amigaos.c.obj
 
 amigaos.i: amigaos.c.i
@@ -211,7 +211,7 @@ amigaos.i: amigaos.c.i
 
 # target to preprocess a source file
 amigaos.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/amigaos.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/amigaos.c.i
 .PHONY : amigaos.c.i
 
 amigaos.s: amigaos.c.s
@@ -219,7 +219,7 @@ amigaos.s: amigaos.c.s
 
 # target to generate assembly for a file
 amigaos.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/amigaos.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/amigaos.c.s
 .PHONY : amigaos.c.s
 
 asyn-ares.obj: asyn-ares.c.obj
@@ -227,7 +227,7 @@ asyn-ares.obj: asyn-ares.c.obj
 
 # target to build an object file
 asyn-ares.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/asyn-ares.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/asyn-ares.c.obj
 .PHONY : asyn-ares.c.obj
 
 asyn-ares.i: asyn-ares.c.i
@@ -235,7 +235,7 @@ asyn-ares.i: asyn-ares.c.i
 
 # target to preprocess a source file
 asyn-ares.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/asyn-ares.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/asyn-ares.c.i
 .PHONY : asyn-ares.c.i
 
 asyn-ares.s: asyn-ares.c.s
@@ -243,7 +243,7 @@ asyn-ares.s: asyn-ares.c.s
 
 # target to generate assembly for a file
 asyn-ares.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/asyn-ares.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/asyn-ares.c.s
 .PHONY : asyn-ares.c.s
 
 asyn-thread.obj: asyn-thread.c.obj
@@ -251,7 +251,7 @@ asyn-thread.obj: asyn-thread.c.obj
 
 # target to build an object file
 asyn-thread.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/asyn-thread.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/asyn-thread.c.obj
 .PHONY : asyn-thread.c.obj
 
 asyn-thread.i: asyn-thread.c.i
@@ -259,7 +259,7 @@ asyn-thread.i: asyn-thread.c.i
 
 # target to preprocess a source file
 asyn-thread.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/asyn-thread.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/asyn-thread.c.i
 .PHONY : asyn-thread.c.i
 
 asyn-thread.s: asyn-thread.c.s
@@ -267,7 +267,7 @@ asyn-thread.s: asyn-thread.c.s
 
 # target to generate assembly for a file
 asyn-thread.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/asyn-thread.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/asyn-thread.c.s
 .PHONY : asyn-thread.c.s
 
 base64.obj: base64.c.obj
@@ -275,7 +275,7 @@ base64.obj: base64.c.obj
 
 # target to build an object file
 base64.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/base64.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/base64.c.obj
 .PHONY : base64.c.obj
 
 base64.i: base64.c.i
@@ -283,7 +283,7 @@ base64.i: base64.c.i
 
 # target to preprocess a source file
 base64.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/base64.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/base64.c.i
 .PHONY : base64.c.i
 
 base64.s: base64.c.s
@@ -291,7 +291,7 @@ base64.s: base64.c.s
 
 # target to generate assembly for a file
 base64.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/base64.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/base64.c.s
 .PHONY : base64.c.s
 
 conncache.obj: conncache.c.obj
@@ -299,7 +299,7 @@ conncache.obj: conncache.c.obj
 
 # target to build an object file
 conncache.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/conncache.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/conncache.c.obj
 .PHONY : conncache.c.obj
 
 conncache.i: conncache.c.i
@@ -307,7 +307,7 @@ conncache.i: conncache.c.i
 
 # target to preprocess a source file
 conncache.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/conncache.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/conncache.c.i
 .PHONY : conncache.c.i
 
 conncache.s: conncache.c.s
@@ -315,7 +315,7 @@ conncache.s: conncache.c.s
 
 # target to generate assembly for a file
 conncache.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/conncache.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/conncache.c.s
 .PHONY : conncache.c.s
 
 connect.obj: connect.c.obj
@@ -323,7 +323,7 @@ connect.obj: connect.c.obj
 
 # target to build an object file
 connect.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/connect.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/connect.c.obj
 .PHONY : connect.c.obj
 
 connect.i: connect.c.i
@@ -331,7 +331,7 @@ connect.i: connect.c.i
 
 # target to preprocess a source file
 connect.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/connect.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/connect.c.i
 .PHONY : connect.c.i
 
 connect.s: connect.c.s
@@ -339,7 +339,7 @@ connect.s: connect.c.s
 
 # target to generate assembly for a file
 connect.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/connect.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/connect.c.s
 .PHONY : connect.c.s
 
 content_encoding.obj: content_encoding.c.obj
@@ -347,7 +347,7 @@ content_encoding.obj: content_encoding.c.obj
 
 # target to build an object file
 content_encoding.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/content_encoding.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/content_encoding.c.obj
 .PHONY : content_encoding.c.obj
 
 content_encoding.i: content_encoding.c.i
@@ -355,7 +355,7 @@ content_encoding.i: content_encoding.c.i
 
 # target to preprocess a source file
 content_encoding.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/content_encoding.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/content_encoding.c.i
 .PHONY : content_encoding.c.i
 
 content_encoding.s: content_encoding.c.s
@@ -363,7 +363,7 @@ content_encoding.s: content_encoding.c.s
 
 # target to generate assembly for a file
 content_encoding.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/content_encoding.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/content_encoding.c.s
 .PHONY : content_encoding.c.s
 
 cookie.obj: cookie.c.obj
@@ -371,7 +371,7 @@ cookie.obj: cookie.c.obj
 
 # target to build an object file
 cookie.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/cookie.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/cookie.c.obj
 .PHONY : cookie.c.obj
 
 cookie.i: cookie.c.i
@@ -379,7 +379,7 @@ cookie.i: cookie.c.i
 
 # target to preprocess a source file
 cookie.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/cookie.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/cookie.c.i
 .PHONY : cookie.c.i
 
 cookie.s: cookie.c.s
@@ -387,7 +387,7 @@ cookie.s: cookie.c.s
 
 # target to generate assembly for a file
 cookie.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/cookie.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/cookie.c.s
 .PHONY : cookie.c.s
 
 curl_addrinfo.obj: curl_addrinfo.c.obj
@@ -395,7 +395,7 @@ curl_addrinfo.obj: curl_addrinfo.c.obj
 
 # target to build an object file
 curl_addrinfo.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_addrinfo.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_addrinfo.c.obj
 .PHONY : curl_addrinfo.c.obj
 
 curl_addrinfo.i: curl_addrinfo.c.i
@@ -403,7 +403,7 @@ curl_addrinfo.i: curl_addrinfo.c.i
 
 # target to preprocess a source file
 curl_addrinfo.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_addrinfo.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_addrinfo.c.i
 .PHONY : curl_addrinfo.c.i
 
 curl_addrinfo.s: curl_addrinfo.c.s
@@ -411,7 +411,7 @@ curl_addrinfo.s: curl_addrinfo.c.s
 
 # target to generate assembly for a file
 curl_addrinfo.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_addrinfo.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_addrinfo.c.s
 .PHONY : curl_addrinfo.c.s
 
 curl_ctype.obj: curl_ctype.c.obj
@@ -419,7 +419,7 @@ curl_ctype.obj: curl_ctype.c.obj
 
 # target to build an object file
 curl_ctype.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_ctype.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_ctype.c.obj
 .PHONY : curl_ctype.c.obj
 
 curl_ctype.i: curl_ctype.c.i
@@ -427,7 +427,7 @@ curl_ctype.i: curl_ctype.c.i
 
 # target to preprocess a source file
 curl_ctype.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_ctype.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_ctype.c.i
 .PHONY : curl_ctype.c.i
 
 curl_ctype.s: curl_ctype.c.s
@@ -435,7 +435,7 @@ curl_ctype.s: curl_ctype.c.s
 
 # target to generate assembly for a file
 curl_ctype.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_ctype.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_ctype.c.s
 .PHONY : curl_ctype.c.s
 
 curl_des.obj: curl_des.c.obj
@@ -443,7 +443,7 @@ curl_des.obj: curl_des.c.obj
 
 # target to build an object file
 curl_des.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_des.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_des.c.obj
 .PHONY : curl_des.c.obj
 
 curl_des.i: curl_des.c.i
@@ -451,7 +451,7 @@ curl_des.i: curl_des.c.i
 
 # target to preprocess a source file
 curl_des.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_des.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_des.c.i
 .PHONY : curl_des.c.i
 
 curl_des.s: curl_des.c.s
@@ -459,7 +459,7 @@ curl_des.s: curl_des.c.s
 
 # target to generate assembly for a file
 curl_des.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_des.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_des.c.s
 .PHONY : curl_des.c.s
 
 curl_endian.obj: curl_endian.c.obj
@@ -467,7 +467,7 @@ curl_endian.obj: curl_endian.c.obj
 
 # target to build an object file
 curl_endian.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_endian.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_endian.c.obj
 .PHONY : curl_endian.c.obj
 
 curl_endian.i: curl_endian.c.i
@@ -475,7 +475,7 @@ curl_endian.i: curl_endian.c.i
 
 # target to preprocess a source file
 curl_endian.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_endian.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_endian.c.i
 .PHONY : curl_endian.c.i
 
 curl_endian.s: curl_endian.c.s
@@ -483,7 +483,7 @@ curl_endian.s: curl_endian.c.s
 
 # target to generate assembly for a file
 curl_endian.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_endian.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_endian.c.s
 .PHONY : curl_endian.c.s
 
 curl_fnmatch.obj: curl_fnmatch.c.obj
@@ -491,7 +491,7 @@ curl_fnmatch.obj: curl_fnmatch.c.obj
 
 # target to build an object file
 curl_fnmatch.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_fnmatch.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_fnmatch.c.obj
 .PHONY : curl_fnmatch.c.obj
 
 curl_fnmatch.i: curl_fnmatch.c.i
@@ -499,7 +499,7 @@ curl_fnmatch.i: curl_fnmatch.c.i
 
 # target to preprocess a source file
 curl_fnmatch.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_fnmatch.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_fnmatch.c.i
 .PHONY : curl_fnmatch.c.i
 
 curl_fnmatch.s: curl_fnmatch.c.s
@@ -507,7 +507,7 @@ curl_fnmatch.s: curl_fnmatch.c.s
 
 # target to generate assembly for a file
 curl_fnmatch.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_fnmatch.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_fnmatch.c.s
 .PHONY : curl_fnmatch.c.s
 
 curl_get_line.obj: curl_get_line.c.obj
@@ -515,7 +515,7 @@ curl_get_line.obj: curl_get_line.c.obj
 
 # target to build an object file
 curl_get_line.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_get_line.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_get_line.c.obj
 .PHONY : curl_get_line.c.obj
 
 curl_get_line.i: curl_get_line.c.i
@@ -523,7 +523,7 @@ curl_get_line.i: curl_get_line.c.i
 
 # target to preprocess a source file
 curl_get_line.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_get_line.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_get_line.c.i
 .PHONY : curl_get_line.c.i
 
 curl_get_line.s: curl_get_line.c.s
@@ -531,7 +531,7 @@ curl_get_line.s: curl_get_line.c.s
 
 # target to generate assembly for a file
 curl_get_line.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_get_line.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_get_line.c.s
 .PHONY : curl_get_line.c.s
 
 curl_gethostname.obj: curl_gethostname.c.obj
@@ -539,7 +539,7 @@ curl_gethostname.obj: curl_gethostname.c.obj
 
 # target to build an object file
 curl_gethostname.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_gethostname.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_gethostname.c.obj
 .PHONY : curl_gethostname.c.obj
 
 curl_gethostname.i: curl_gethostname.c.i
@@ -547,7 +547,7 @@ curl_gethostname.i: curl_gethostname.c.i
 
 # target to preprocess a source file
 curl_gethostname.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_gethostname.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_gethostname.c.i
 .PHONY : curl_gethostname.c.i
 
 curl_gethostname.s: curl_gethostname.c.s
@@ -555,7 +555,7 @@ curl_gethostname.s: curl_gethostname.c.s
 
 # target to generate assembly for a file
 curl_gethostname.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_gethostname.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_gethostname.c.s
 .PHONY : curl_gethostname.c.s
 
 curl_gssapi.obj: curl_gssapi.c.obj
@@ -563,7 +563,7 @@ curl_gssapi.obj: curl_gssapi.c.obj
 
 # target to build an object file
 curl_gssapi.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_gssapi.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_gssapi.c.obj
 .PHONY : curl_gssapi.c.obj
 
 curl_gssapi.i: curl_gssapi.c.i
@@ -571,7 +571,7 @@ curl_gssapi.i: curl_gssapi.c.i
 
 # target to preprocess a source file
 curl_gssapi.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_gssapi.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_gssapi.c.i
 .PHONY : curl_gssapi.c.i
 
 curl_gssapi.s: curl_gssapi.c.s
@@ -579,7 +579,7 @@ curl_gssapi.s: curl_gssapi.c.s
 
 # target to generate assembly for a file
 curl_gssapi.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_gssapi.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_gssapi.c.s
 .PHONY : curl_gssapi.c.s
 
 curl_memrchr.obj: curl_memrchr.c.obj
@@ -587,7 +587,7 @@ curl_memrchr.obj: curl_memrchr.c.obj
 
 # target to build an object file
 curl_memrchr.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_memrchr.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_memrchr.c.obj
 .PHONY : curl_memrchr.c.obj
 
 curl_memrchr.i: curl_memrchr.c.i
@@ -595,7 +595,7 @@ curl_memrchr.i: curl_memrchr.c.i
 
 # target to preprocess a source file
 curl_memrchr.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_memrchr.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_memrchr.c.i
 .PHONY : curl_memrchr.c.i
 
 curl_memrchr.s: curl_memrchr.c.s
@@ -603,7 +603,7 @@ curl_memrchr.s: curl_memrchr.c.s
 
 # target to generate assembly for a file
 curl_memrchr.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_memrchr.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_memrchr.c.s
 .PHONY : curl_memrchr.c.s
 
 curl_multibyte.obj: curl_multibyte.c.obj
@@ -611,7 +611,7 @@ curl_multibyte.obj: curl_multibyte.c.obj
 
 # target to build an object file
 curl_multibyte.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_multibyte.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_multibyte.c.obj
 .PHONY : curl_multibyte.c.obj
 
 curl_multibyte.i: curl_multibyte.c.i
@@ -619,7 +619,7 @@ curl_multibyte.i: curl_multibyte.c.i
 
 # target to preprocess a source file
 curl_multibyte.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_multibyte.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_multibyte.c.i
 .PHONY : curl_multibyte.c.i
 
 curl_multibyte.s: curl_multibyte.c.s
@@ -627,7 +627,7 @@ curl_multibyte.s: curl_multibyte.c.s
 
 # target to generate assembly for a file
 curl_multibyte.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_multibyte.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_multibyte.c.s
 .PHONY : curl_multibyte.c.s
 
 curl_ntlm_core.obj: curl_ntlm_core.c.obj
@@ -635,7 +635,7 @@ curl_ntlm_core.obj: curl_ntlm_core.c.obj
 
 # target to build an object file
 curl_ntlm_core.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_ntlm_core.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_ntlm_core.c.obj
 .PHONY : curl_ntlm_core.c.obj
 
 curl_ntlm_core.i: curl_ntlm_core.c.i
@@ -643,7 +643,7 @@ curl_ntlm_core.i: curl_ntlm_core.c.i
 
 # target to preprocess a source file
 curl_ntlm_core.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_ntlm_core.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_ntlm_core.c.i
 .PHONY : curl_ntlm_core.c.i
 
 curl_ntlm_core.s: curl_ntlm_core.c.s
@@ -651,7 +651,7 @@ curl_ntlm_core.s: curl_ntlm_core.c.s
 
 # target to generate assembly for a file
 curl_ntlm_core.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_ntlm_core.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_ntlm_core.c.s
 .PHONY : curl_ntlm_core.c.s
 
 curl_ntlm_wb.obj: curl_ntlm_wb.c.obj
@@ -659,7 +659,7 @@ curl_ntlm_wb.obj: curl_ntlm_wb.c.obj
 
 # target to build an object file
 curl_ntlm_wb.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_ntlm_wb.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_ntlm_wb.c.obj
 .PHONY : curl_ntlm_wb.c.obj
 
 curl_ntlm_wb.i: curl_ntlm_wb.c.i
@@ -667,7 +667,7 @@ curl_ntlm_wb.i: curl_ntlm_wb.c.i
 
 # target to preprocess a source file
 curl_ntlm_wb.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_ntlm_wb.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_ntlm_wb.c.i
 .PHONY : curl_ntlm_wb.c.i
 
 curl_ntlm_wb.s: curl_ntlm_wb.c.s
@@ -675,7 +675,7 @@ curl_ntlm_wb.s: curl_ntlm_wb.c.s
 
 # target to generate assembly for a file
 curl_ntlm_wb.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_ntlm_wb.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_ntlm_wb.c.s
 .PHONY : curl_ntlm_wb.c.s
 
 curl_path.obj: curl_path.c.obj
@@ -683,7 +683,7 @@ curl_path.obj: curl_path.c.obj
 
 # target to build an object file
 curl_path.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_path.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_path.c.obj
 .PHONY : curl_path.c.obj
 
 curl_path.i: curl_path.c.i
@@ -691,7 +691,7 @@ curl_path.i: curl_path.c.i
 
 # target to preprocess a source file
 curl_path.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_path.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_path.c.i
 .PHONY : curl_path.c.i
 
 curl_path.s: curl_path.c.s
@@ -699,7 +699,7 @@ curl_path.s: curl_path.c.s
 
 # target to generate assembly for a file
 curl_path.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_path.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_path.c.s
 .PHONY : curl_path.c.s
 
 curl_range.obj: curl_range.c.obj
@@ -707,7 +707,7 @@ curl_range.obj: curl_range.c.obj
 
 # target to build an object file
 curl_range.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_range.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_range.c.obj
 .PHONY : curl_range.c.obj
 
 curl_range.i: curl_range.c.i
@@ -715,7 +715,7 @@ curl_range.i: curl_range.c.i
 
 # target to preprocess a source file
 curl_range.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_range.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_range.c.i
 .PHONY : curl_range.c.i
 
 curl_range.s: curl_range.c.s
@@ -723,7 +723,7 @@ curl_range.s: curl_range.c.s
 
 # target to generate assembly for a file
 curl_range.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_range.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_range.c.s
 .PHONY : curl_range.c.s
 
 curl_rtmp.obj: curl_rtmp.c.obj
@@ -731,7 +731,7 @@ curl_rtmp.obj: curl_rtmp.c.obj
 
 # target to build an object file
 curl_rtmp.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_rtmp.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_rtmp.c.obj
 .PHONY : curl_rtmp.c.obj
 
 curl_rtmp.i: curl_rtmp.c.i
@@ -739,7 +739,7 @@ curl_rtmp.i: curl_rtmp.c.i
 
 # target to preprocess a source file
 curl_rtmp.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_rtmp.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_rtmp.c.i
 .PHONY : curl_rtmp.c.i
 
 curl_rtmp.s: curl_rtmp.c.s
@@ -747,7 +747,7 @@ curl_rtmp.s: curl_rtmp.c.s
 
 # target to generate assembly for a file
 curl_rtmp.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_rtmp.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_rtmp.c.s
 .PHONY : curl_rtmp.c.s
 
 curl_sasl.obj: curl_sasl.c.obj
@@ -755,7 +755,7 @@ curl_sasl.obj: curl_sasl.c.obj
 
 # target to build an object file
 curl_sasl.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_sasl.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_sasl.c.obj
 .PHONY : curl_sasl.c.obj
 
 curl_sasl.i: curl_sasl.c.i
@@ -763,7 +763,7 @@ curl_sasl.i: curl_sasl.c.i
 
 # target to preprocess a source file
 curl_sasl.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_sasl.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_sasl.c.i
 .PHONY : curl_sasl.c.i
 
 curl_sasl.s: curl_sasl.c.s
@@ -771,7 +771,7 @@ curl_sasl.s: curl_sasl.c.s
 
 # target to generate assembly for a file
 curl_sasl.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_sasl.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_sasl.c.s
 .PHONY : curl_sasl.c.s
 
 curl_sspi.obj: curl_sspi.c.obj
@@ -779,7 +779,7 @@ curl_sspi.obj: curl_sspi.c.obj
 
 # target to build an object file
 curl_sspi.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_sspi.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_sspi.c.obj
 .PHONY : curl_sspi.c.obj
 
 curl_sspi.i: curl_sspi.c.i
@@ -787,7 +787,7 @@ curl_sspi.i: curl_sspi.c.i
 
 # target to preprocess a source file
 curl_sspi.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_sspi.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_sspi.c.i
 .PHONY : curl_sspi.c.i
 
 curl_sspi.s: curl_sspi.c.s
@@ -795,7 +795,7 @@ curl_sspi.s: curl_sspi.c.s
 
 # target to generate assembly for a file
 curl_sspi.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_sspi.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_sspi.c.s
 .PHONY : curl_sspi.c.s
 
 curl_threads.obj: curl_threads.c.obj
@@ -803,7 +803,7 @@ curl_threads.obj: curl_threads.c.obj
 
 # target to build an object file
 curl_threads.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_threads.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_threads.c.obj
 .PHONY : curl_threads.c.obj
 
 curl_threads.i: curl_threads.c.i
@@ -811,7 +811,7 @@ curl_threads.i: curl_threads.c.i
 
 # target to preprocess a source file
 curl_threads.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_threads.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_threads.c.i
 .PHONY : curl_threads.c.i
 
 curl_threads.s: curl_threads.c.s
@@ -819,7 +819,7 @@ curl_threads.s: curl_threads.c.s
 
 # target to generate assembly for a file
 curl_threads.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_threads.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/curl_threads.c.s
 .PHONY : curl_threads.c.s
 
 dict.obj: dict.c.obj
@@ -827,7 +827,7 @@ dict.obj: dict.c.obj
 
 # target to build an object file
 dict.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/dict.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/dict.c.obj
 .PHONY : dict.c.obj
 
 dict.i: dict.c.i
@@ -835,7 +835,7 @@ dict.i: dict.c.i
 
 # target to preprocess a source file
 dict.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/dict.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/dict.c.i
 .PHONY : dict.c.i
 
 dict.s: dict.c.s
@@ -843,7 +843,7 @@ dict.s: dict.c.s
 
 # target to generate assembly for a file
 dict.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/dict.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/dict.c.s
 .PHONY : dict.c.s
 
 doh.obj: doh.c.obj
@@ -851,7 +851,7 @@ doh.obj: doh.c.obj
 
 # target to build an object file
 doh.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/doh.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/doh.c.obj
 .PHONY : doh.c.obj
 
 doh.i: doh.c.i
@@ -859,7 +859,7 @@ doh.i: doh.c.i
 
 # target to preprocess a source file
 doh.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/doh.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/doh.c.i
 .PHONY : doh.c.i
 
 doh.s: doh.c.s
@@ -867,7 +867,7 @@ doh.s: doh.c.s
 
 # target to generate assembly for a file
 doh.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/doh.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/doh.c.s
 .PHONY : doh.c.s
 
 dotdot.obj: dotdot.c.obj
@@ -875,7 +875,7 @@ dotdot.obj: dotdot.c.obj
 
 # target to build an object file
 dotdot.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/dotdot.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/dotdot.c.obj
 .PHONY : dotdot.c.obj
 
 dotdot.i: dotdot.c.i
@@ -883,7 +883,7 @@ dotdot.i: dotdot.c.i
 
 # target to preprocess a source file
 dotdot.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/dotdot.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/dotdot.c.i
 .PHONY : dotdot.c.i
 
 dotdot.s: dotdot.c.s
@@ -891,7 +891,7 @@ dotdot.s: dotdot.c.s
 
 # target to generate assembly for a file
 dotdot.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/dotdot.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/dotdot.c.s
 .PHONY : dotdot.c.s
 
 easy.obj: easy.c.obj
@@ -899,7 +899,7 @@ easy.obj: easy.c.obj
 
 # target to build an object file
 easy.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/easy.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/easy.c.obj
 .PHONY : easy.c.obj
 
 easy.i: easy.c.i
@@ -907,7 +907,7 @@ easy.i: easy.c.i
 
 # target to preprocess a source file
 easy.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/easy.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/easy.c.i
 .PHONY : easy.c.i
 
 easy.s: easy.c.s
@@ -915,7 +915,7 @@ easy.s: easy.c.s
 
 # target to generate assembly for a file
 easy.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/easy.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/easy.c.s
 .PHONY : easy.c.s
 
 escape.obj: escape.c.obj
@@ -923,7 +923,7 @@ escape.obj: escape.c.obj
 
 # target to build an object file
 escape.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/escape.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/escape.c.obj
 .PHONY : escape.c.obj
 
 escape.i: escape.c.i
@@ -931,7 +931,7 @@ escape.i: escape.c.i
 
 # target to preprocess a source file
 escape.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/escape.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/escape.c.i
 .PHONY : escape.c.i
 
 escape.s: escape.c.s
@@ -939,7 +939,7 @@ escape.s: escape.c.s
 
 # target to generate assembly for a file
 escape.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/escape.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/escape.c.s
 .PHONY : escape.c.s
 
 file.obj: file.c.obj
@@ -947,7 +947,7 @@ file.obj: file.c.obj
 
 # target to build an object file
 file.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/file.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/file.c.obj
 .PHONY : file.c.obj
 
 file.i: file.c.i
@@ -955,7 +955,7 @@ file.i: file.c.i
 
 # target to preprocess a source file
 file.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/file.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/file.c.i
 .PHONY : file.c.i
 
 file.s: file.c.s
@@ -963,7 +963,7 @@ file.s: file.c.s
 
 # target to generate assembly for a file
 file.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/file.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/file.c.s
 .PHONY : file.c.s
 
 fileinfo.obj: fileinfo.c.obj
@@ -971,7 +971,7 @@ fileinfo.obj: fileinfo.c.obj
 
 # target to build an object file
 fileinfo.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/fileinfo.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/fileinfo.c.obj
 .PHONY : fileinfo.c.obj
 
 fileinfo.i: fileinfo.c.i
@@ -979,7 +979,7 @@ fileinfo.i: fileinfo.c.i
 
 # target to preprocess a source file
 fileinfo.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/fileinfo.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/fileinfo.c.i
 .PHONY : fileinfo.c.i
 
 fileinfo.s: fileinfo.c.s
@@ -987,7 +987,7 @@ fileinfo.s: fileinfo.c.s
 
 # target to generate assembly for a file
 fileinfo.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/fileinfo.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/fileinfo.c.s
 .PHONY : fileinfo.c.s
 
 formdata.obj: formdata.c.obj
@@ -995,7 +995,7 @@ formdata.obj: formdata.c.obj
 
 # target to build an object file
 formdata.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/formdata.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/formdata.c.obj
 .PHONY : formdata.c.obj
 
 formdata.i: formdata.c.i
@@ -1003,7 +1003,7 @@ formdata.i: formdata.c.i
 
 # target to preprocess a source file
 formdata.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/formdata.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/formdata.c.i
 .PHONY : formdata.c.i
 
 formdata.s: formdata.c.s
@@ -1011,7 +1011,7 @@ formdata.s: formdata.c.s
 
 # target to generate assembly for a file
 formdata.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/formdata.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/formdata.c.s
 .PHONY : formdata.c.s
 
 ftp.obj: ftp.c.obj
@@ -1019,7 +1019,7 @@ ftp.obj: ftp.c.obj
 
 # target to build an object file
 ftp.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/ftp.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/ftp.c.obj
 .PHONY : ftp.c.obj
 
 ftp.i: ftp.c.i
@@ -1027,7 +1027,7 @@ ftp.i: ftp.c.i
 
 # target to preprocess a source file
 ftp.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/ftp.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/ftp.c.i
 .PHONY : ftp.c.i
 
 ftp.s: ftp.c.s
@@ -1035,7 +1035,7 @@ ftp.s: ftp.c.s
 
 # target to generate assembly for a file
 ftp.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/ftp.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/ftp.c.s
 .PHONY : ftp.c.s
 
 ftplistparser.obj: ftplistparser.c.obj
@@ -1043,7 +1043,7 @@ ftplistparser.obj: ftplistparser.c.obj
 
 # target to build an object file
 ftplistparser.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/ftplistparser.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/ftplistparser.c.obj
 .PHONY : ftplistparser.c.obj
 
 ftplistparser.i: ftplistparser.c.i
@@ -1051,7 +1051,7 @@ ftplistparser.i: ftplistparser.c.i
 
 # target to preprocess a source file
 ftplistparser.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/ftplistparser.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/ftplistparser.c.i
 .PHONY : ftplistparser.c.i
 
 ftplistparser.s: ftplistparser.c.s
@@ -1059,7 +1059,7 @@ ftplistparser.s: ftplistparser.c.s
 
 # target to generate assembly for a file
 ftplistparser.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/ftplistparser.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/ftplistparser.c.s
 .PHONY : ftplistparser.c.s
 
 getenv.obj: getenv.c.obj
@@ -1067,7 +1067,7 @@ getenv.obj: getenv.c.obj
 
 # target to build an object file
 getenv.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/getenv.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/getenv.c.obj
 .PHONY : getenv.c.obj
 
 getenv.i: getenv.c.i
@@ -1075,7 +1075,7 @@ getenv.i: getenv.c.i
 
 # target to preprocess a source file
 getenv.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/getenv.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/getenv.c.i
 .PHONY : getenv.c.i
 
 getenv.s: getenv.c.s
@@ -1083,7 +1083,7 @@ getenv.s: getenv.c.s
 
 # target to generate assembly for a file
 getenv.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/getenv.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/getenv.c.s
 .PHONY : getenv.c.s
 
 getinfo.obj: getinfo.c.obj
@@ -1091,7 +1091,7 @@ getinfo.obj: getinfo.c.obj
 
 # target to build an object file
 getinfo.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/getinfo.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/getinfo.c.obj
 .PHONY : getinfo.c.obj
 
 getinfo.i: getinfo.c.i
@@ -1099,7 +1099,7 @@ getinfo.i: getinfo.c.i
 
 # target to preprocess a source file
 getinfo.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/getinfo.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/getinfo.c.i
 .PHONY : getinfo.c.i
 
 getinfo.s: getinfo.c.s
@@ -1107,7 +1107,7 @@ getinfo.s: getinfo.c.s
 
 # target to generate assembly for a file
 getinfo.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/getinfo.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/getinfo.c.s
 .PHONY : getinfo.c.s
 
 gopher.obj: gopher.c.obj
@@ -1115,7 +1115,7 @@ gopher.obj: gopher.c.obj
 
 # target to build an object file
 gopher.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/gopher.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/gopher.c.obj
 .PHONY : gopher.c.obj
 
 gopher.i: gopher.c.i
@@ -1123,7 +1123,7 @@ gopher.i: gopher.c.i
 
 # target to preprocess a source file
 gopher.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/gopher.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/gopher.c.i
 .PHONY : gopher.c.i
 
 gopher.s: gopher.c.s
@@ -1131,7 +1131,7 @@ gopher.s: gopher.c.s
 
 # target to generate assembly for a file
 gopher.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/gopher.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/gopher.c.s
 .PHONY : gopher.c.s
 
 hash.obj: hash.c.obj
@@ -1139,7 +1139,7 @@ hash.obj: hash.c.obj
 
 # target to build an object file
 hash.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hash.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hash.c.obj
 .PHONY : hash.c.obj
 
 hash.i: hash.c.i
@@ -1147,7 +1147,7 @@ hash.i: hash.c.i
 
 # target to preprocess a source file
 hash.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hash.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hash.c.i
 .PHONY : hash.c.i
 
 hash.s: hash.c.s
@@ -1155,7 +1155,7 @@ hash.s: hash.c.s
 
 # target to generate assembly for a file
 hash.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hash.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hash.c.s
 .PHONY : hash.c.s
 
 hmac.obj: hmac.c.obj
@@ -1163,7 +1163,7 @@ hmac.obj: hmac.c.obj
 
 # target to build an object file
 hmac.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hmac.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hmac.c.obj
 .PHONY : hmac.c.obj
 
 hmac.i: hmac.c.i
@@ -1171,7 +1171,7 @@ hmac.i: hmac.c.i
 
 # target to preprocess a source file
 hmac.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hmac.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hmac.c.i
 .PHONY : hmac.c.i
 
 hmac.s: hmac.c.s
@@ -1179,7 +1179,7 @@ hmac.s: hmac.c.s
 
 # target to generate assembly for a file
 hmac.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hmac.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hmac.c.s
 .PHONY : hmac.c.s
 
 hostasyn.obj: hostasyn.c.obj
@@ -1187,7 +1187,7 @@ hostasyn.obj: hostasyn.c.obj
 
 # target to build an object file
 hostasyn.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hostasyn.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hostasyn.c.obj
 .PHONY : hostasyn.c.obj
 
 hostasyn.i: hostasyn.c.i
@@ -1195,7 +1195,7 @@ hostasyn.i: hostasyn.c.i
 
 # target to preprocess a source file
 hostasyn.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hostasyn.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hostasyn.c.i
 .PHONY : hostasyn.c.i
 
 hostasyn.s: hostasyn.c.s
@@ -1203,7 +1203,7 @@ hostasyn.s: hostasyn.c.s
 
 # target to generate assembly for a file
 hostasyn.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hostasyn.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hostasyn.c.s
 .PHONY : hostasyn.c.s
 
 hostcheck.obj: hostcheck.c.obj
@@ -1211,7 +1211,7 @@ hostcheck.obj: hostcheck.c.obj
 
 # target to build an object file
 hostcheck.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hostcheck.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hostcheck.c.obj
 .PHONY : hostcheck.c.obj
 
 hostcheck.i: hostcheck.c.i
@@ -1219,7 +1219,7 @@ hostcheck.i: hostcheck.c.i
 
 # target to preprocess a source file
 hostcheck.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hostcheck.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hostcheck.c.i
 .PHONY : hostcheck.c.i
 
 hostcheck.s: hostcheck.c.s
@@ -1227,7 +1227,7 @@ hostcheck.s: hostcheck.c.s
 
 # target to generate assembly for a file
 hostcheck.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hostcheck.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hostcheck.c.s
 .PHONY : hostcheck.c.s
 
 hostip.obj: hostip.c.obj
@@ -1235,7 +1235,7 @@ hostip.obj: hostip.c.obj
 
 # target to build an object file
 hostip.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hostip.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hostip.c.obj
 .PHONY : hostip.c.obj
 
 hostip.i: hostip.c.i
@@ -1243,7 +1243,7 @@ hostip.i: hostip.c.i
 
 # target to preprocess a source file
 hostip.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hostip.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hostip.c.i
 .PHONY : hostip.c.i
 
 hostip.s: hostip.c.s
@@ -1251,7 +1251,7 @@ hostip.s: hostip.c.s
 
 # target to generate assembly for a file
 hostip.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hostip.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hostip.c.s
 .PHONY : hostip.c.s
 
 hostip4.obj: hostip4.c.obj
@@ -1259,7 +1259,7 @@ hostip4.obj: hostip4.c.obj
 
 # target to build an object file
 hostip4.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hostip4.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hostip4.c.obj
 .PHONY : hostip4.c.obj
 
 hostip4.i: hostip4.c.i
@@ -1267,7 +1267,7 @@ hostip4.i: hostip4.c.i
 
 # target to preprocess a source file
 hostip4.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hostip4.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hostip4.c.i
 .PHONY : hostip4.c.i
 
 hostip4.s: hostip4.c.s
@@ -1275,7 +1275,7 @@ hostip4.s: hostip4.c.s
 
 # target to generate assembly for a file
 hostip4.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hostip4.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hostip4.c.s
 .PHONY : hostip4.c.s
 
 hostip6.obj: hostip6.c.obj
@@ -1283,7 +1283,7 @@ hostip6.obj: hostip6.c.obj
 
 # target to build an object file
 hostip6.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hostip6.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hostip6.c.obj
 .PHONY : hostip6.c.obj
 
 hostip6.i: hostip6.c.i
@@ -1291,7 +1291,7 @@ hostip6.i: hostip6.c.i
 
 # target to preprocess a source file
 hostip6.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hostip6.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hostip6.c.i
 .PHONY : hostip6.c.i
 
 hostip6.s: hostip6.c.s
@@ -1299,7 +1299,7 @@ hostip6.s: hostip6.c.s
 
 # target to generate assembly for a file
 hostip6.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hostip6.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hostip6.c.s
 .PHONY : hostip6.c.s
 
 hostsyn.obj: hostsyn.c.obj
@@ -1307,7 +1307,7 @@ hostsyn.obj: hostsyn.c.obj
 
 # target to build an object file
 hostsyn.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hostsyn.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hostsyn.c.obj
 .PHONY : hostsyn.c.obj
 
 hostsyn.i: hostsyn.c.i
@@ -1315,7 +1315,7 @@ hostsyn.i: hostsyn.c.i
 
 # target to preprocess a source file
 hostsyn.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hostsyn.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hostsyn.c.i
 .PHONY : hostsyn.c.i
 
 hostsyn.s: hostsyn.c.s
@@ -1323,7 +1323,7 @@ hostsyn.s: hostsyn.c.s
 
 # target to generate assembly for a file
 hostsyn.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hostsyn.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/hostsyn.c.s
 .PHONY : hostsyn.c.s
 
 http.obj: http.c.obj
@@ -1331,7 +1331,7 @@ http.obj: http.c.obj
 
 # target to build an object file
 http.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http.c.obj
 .PHONY : http.c.obj
 
 http.i: http.c.i
@@ -1339,7 +1339,7 @@ http.i: http.c.i
 
 # target to preprocess a source file
 http.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http.c.i
 .PHONY : http.c.i
 
 http.s: http.c.s
@@ -1347,7 +1347,7 @@ http.s: http.c.s
 
 # target to generate assembly for a file
 http.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http.c.s
 .PHONY : http.c.s
 
 http2.obj: http2.c.obj
@@ -1355,7 +1355,7 @@ http2.obj: http2.c.obj
 
 # target to build an object file
 http2.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http2.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http2.c.obj
 .PHONY : http2.c.obj
 
 http2.i: http2.c.i
@@ -1363,7 +1363,7 @@ http2.i: http2.c.i
 
 # target to preprocess a source file
 http2.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http2.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http2.c.i
 .PHONY : http2.c.i
 
 http2.s: http2.c.s
@@ -1371,7 +1371,7 @@ http2.s: http2.c.s
 
 # target to generate assembly for a file
 http2.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http2.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http2.c.s
 .PHONY : http2.c.s
 
 http_chunks.obj: http_chunks.c.obj
@@ -1379,7 +1379,7 @@ http_chunks.obj: http_chunks.c.obj
 
 # target to build an object file
 http_chunks.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http_chunks.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http_chunks.c.obj
 .PHONY : http_chunks.c.obj
 
 http_chunks.i: http_chunks.c.i
@@ -1387,7 +1387,7 @@ http_chunks.i: http_chunks.c.i
 
 # target to preprocess a source file
 http_chunks.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http_chunks.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http_chunks.c.i
 .PHONY : http_chunks.c.i
 
 http_chunks.s: http_chunks.c.s
@@ -1395,7 +1395,7 @@ http_chunks.s: http_chunks.c.s
 
 # target to generate assembly for a file
 http_chunks.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http_chunks.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http_chunks.c.s
 .PHONY : http_chunks.c.s
 
 http_digest.obj: http_digest.c.obj
@@ -1403,7 +1403,7 @@ http_digest.obj: http_digest.c.obj
 
 # target to build an object file
 http_digest.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http_digest.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http_digest.c.obj
 .PHONY : http_digest.c.obj
 
 http_digest.i: http_digest.c.i
@@ -1411,7 +1411,7 @@ http_digest.i: http_digest.c.i
 
 # target to preprocess a source file
 http_digest.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http_digest.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http_digest.c.i
 .PHONY : http_digest.c.i
 
 http_digest.s: http_digest.c.s
@@ -1419,7 +1419,7 @@ http_digest.s: http_digest.c.s
 
 # target to generate assembly for a file
 http_digest.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http_digest.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http_digest.c.s
 .PHONY : http_digest.c.s
 
 http_negotiate.obj: http_negotiate.c.obj
@@ -1427,7 +1427,7 @@ http_negotiate.obj: http_negotiate.c.obj
 
 # target to build an object file
 http_negotiate.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http_negotiate.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http_negotiate.c.obj
 .PHONY : http_negotiate.c.obj
 
 http_negotiate.i: http_negotiate.c.i
@@ -1435,7 +1435,7 @@ http_negotiate.i: http_negotiate.c.i
 
 # target to preprocess a source file
 http_negotiate.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http_negotiate.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http_negotiate.c.i
 .PHONY : http_negotiate.c.i
 
 http_negotiate.s: http_negotiate.c.s
@@ -1443,7 +1443,7 @@ http_negotiate.s: http_negotiate.c.s
 
 # target to generate assembly for a file
 http_negotiate.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http_negotiate.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http_negotiate.c.s
 .PHONY : http_negotiate.c.s
 
 http_ntlm.obj: http_ntlm.c.obj
@@ -1451,7 +1451,7 @@ http_ntlm.obj: http_ntlm.c.obj
 
 # target to build an object file
 http_ntlm.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http_ntlm.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http_ntlm.c.obj
 .PHONY : http_ntlm.c.obj
 
 http_ntlm.i: http_ntlm.c.i
@@ -1459,7 +1459,7 @@ http_ntlm.i: http_ntlm.c.i
 
 # target to preprocess a source file
 http_ntlm.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http_ntlm.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http_ntlm.c.i
 .PHONY : http_ntlm.c.i
 
 http_ntlm.s: http_ntlm.c.s
@@ -1467,7 +1467,7 @@ http_ntlm.s: http_ntlm.c.s
 
 # target to generate assembly for a file
 http_ntlm.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http_ntlm.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http_ntlm.c.s
 .PHONY : http_ntlm.c.s
 
 http_proxy.obj: http_proxy.c.obj
@@ -1475,7 +1475,7 @@ http_proxy.obj: http_proxy.c.obj
 
 # target to build an object file
 http_proxy.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http_proxy.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http_proxy.c.obj
 .PHONY : http_proxy.c.obj
 
 http_proxy.i: http_proxy.c.i
@@ -1483,7 +1483,7 @@ http_proxy.i: http_proxy.c.i
 
 # target to preprocess a source file
 http_proxy.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http_proxy.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http_proxy.c.i
 .PHONY : http_proxy.c.i
 
 http_proxy.s: http_proxy.c.s
@@ -1491,7 +1491,7 @@ http_proxy.s: http_proxy.c.s
 
 # target to generate assembly for a file
 http_proxy.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http_proxy.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/http_proxy.c.s
 .PHONY : http_proxy.c.s
 
 idn_win32.obj: idn_win32.c.obj
@@ -1499,7 +1499,7 @@ idn_win32.obj: idn_win32.c.obj
 
 # target to build an object file
 idn_win32.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/idn_win32.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/idn_win32.c.obj
 .PHONY : idn_win32.c.obj
 
 idn_win32.i: idn_win32.c.i
@@ -1507,7 +1507,7 @@ idn_win32.i: idn_win32.c.i
 
 # target to preprocess a source file
 idn_win32.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/idn_win32.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/idn_win32.c.i
 .PHONY : idn_win32.c.i
 
 idn_win32.s: idn_win32.c.s
@@ -1515,7 +1515,7 @@ idn_win32.s: idn_win32.c.s
 
 # target to generate assembly for a file
 idn_win32.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/idn_win32.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/idn_win32.c.s
 .PHONY : idn_win32.c.s
 
 if2ip.obj: if2ip.c.obj
@@ -1523,7 +1523,7 @@ if2ip.obj: if2ip.c.obj
 
 # target to build an object file
 if2ip.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/if2ip.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/if2ip.c.obj
 .PHONY : if2ip.c.obj
 
 if2ip.i: if2ip.c.i
@@ -1531,7 +1531,7 @@ if2ip.i: if2ip.c.i
 
 # target to preprocess a source file
 if2ip.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/if2ip.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/if2ip.c.i
 .PHONY : if2ip.c.i
 
 if2ip.s: if2ip.c.s
@@ -1539,7 +1539,7 @@ if2ip.s: if2ip.c.s
 
 # target to generate assembly for a file
 if2ip.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/if2ip.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/if2ip.c.s
 .PHONY : if2ip.c.s
 
 imap.obj: imap.c.obj
@@ -1547,7 +1547,7 @@ imap.obj: imap.c.obj
 
 # target to build an object file
 imap.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/imap.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/imap.c.obj
 .PHONY : imap.c.obj
 
 imap.i: imap.c.i
@@ -1555,7 +1555,7 @@ imap.i: imap.c.i
 
 # target to preprocess a source file
 imap.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/imap.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/imap.c.i
 .PHONY : imap.c.i
 
 imap.s: imap.c.s
@@ -1563,7 +1563,7 @@ imap.s: imap.c.s
 
 # target to generate assembly for a file
 imap.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/imap.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/imap.c.s
 .PHONY : imap.c.s
 
 inet_ntop.obj: inet_ntop.c.obj
@@ -1571,7 +1571,7 @@ inet_ntop.obj: inet_ntop.c.obj
 
 # target to build an object file
 inet_ntop.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/inet_ntop.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/inet_ntop.c.obj
 .PHONY : inet_ntop.c.obj
 
 inet_ntop.i: inet_ntop.c.i
@@ -1579,7 +1579,7 @@ inet_ntop.i: inet_ntop.c.i
 
 # target to preprocess a source file
 inet_ntop.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/inet_ntop.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/inet_ntop.c.i
 .PHONY : inet_ntop.c.i
 
 inet_ntop.s: inet_ntop.c.s
@@ -1587,7 +1587,7 @@ inet_ntop.s: inet_ntop.c.s
 
 # target to generate assembly for a file
 inet_ntop.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/inet_ntop.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/inet_ntop.c.s
 .PHONY : inet_ntop.c.s
 
 inet_pton.obj: inet_pton.c.obj
@@ -1595,7 +1595,7 @@ inet_pton.obj: inet_pton.c.obj
 
 # target to build an object file
 inet_pton.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/inet_pton.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/inet_pton.c.obj
 .PHONY : inet_pton.c.obj
 
 inet_pton.i: inet_pton.c.i
@@ -1603,7 +1603,7 @@ inet_pton.i: inet_pton.c.i
 
 # target to preprocess a source file
 inet_pton.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/inet_pton.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/inet_pton.c.i
 .PHONY : inet_pton.c.i
 
 inet_pton.s: inet_pton.c.s
@@ -1611,7 +1611,7 @@ inet_pton.s: inet_pton.c.s
 
 # target to generate assembly for a file
 inet_pton.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/inet_pton.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/inet_pton.c.s
 .PHONY : inet_pton.c.s
 
 krb5.obj: krb5.c.obj
@@ -1619,7 +1619,7 @@ krb5.obj: krb5.c.obj
 
 # target to build an object file
 krb5.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/krb5.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/krb5.c.obj
 .PHONY : krb5.c.obj
 
 krb5.i: krb5.c.i
@@ -1627,7 +1627,7 @@ krb5.i: krb5.c.i
 
 # target to preprocess a source file
 krb5.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/krb5.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/krb5.c.i
 .PHONY : krb5.c.i
 
 krb5.s: krb5.c.s
@@ -1635,7 +1635,7 @@ krb5.s: krb5.c.s
 
 # target to generate assembly for a file
 krb5.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/krb5.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/krb5.c.s
 .PHONY : krb5.c.s
 
 ldap.obj: ldap.c.obj
@@ -1643,7 +1643,7 @@ ldap.obj: ldap.c.obj
 
 # target to build an object file
 ldap.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/ldap.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/ldap.c.obj
 .PHONY : ldap.c.obj
 
 ldap.i: ldap.c.i
@@ -1651,7 +1651,7 @@ ldap.i: ldap.c.i
 
 # target to preprocess a source file
 ldap.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/ldap.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/ldap.c.i
 .PHONY : ldap.c.i
 
 ldap.s: ldap.c.s
@@ -1659,7 +1659,7 @@ ldap.s: ldap.c.s
 
 # target to generate assembly for a file
 ldap.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/ldap.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/ldap.c.s
 .PHONY : ldap.c.s
 
 llist.obj: llist.c.obj
@@ -1667,7 +1667,7 @@ llist.obj: llist.c.obj
 
 # target to build an object file
 llist.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/llist.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/llist.c.obj
 .PHONY : llist.c.obj
 
 llist.i: llist.c.i
@@ -1675,7 +1675,7 @@ llist.i: llist.c.i
 
 # target to preprocess a source file
 llist.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/llist.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/llist.c.i
 .PHONY : llist.c.i
 
 llist.s: llist.c.s
@@ -1683,7 +1683,7 @@ llist.s: llist.c.s
 
 # target to generate assembly for a file
 llist.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/llist.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/llist.c.s
 .PHONY : llist.c.s
 
 md4.obj: md4.c.obj
@@ -1691,7 +1691,7 @@ md4.obj: md4.c.obj
 
 # target to build an object file
 md4.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/md4.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/md4.c.obj
 .PHONY : md4.c.obj
 
 md4.i: md4.c.i
@@ -1699,7 +1699,7 @@ md4.i: md4.c.i
 
 # target to preprocess a source file
 md4.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/md4.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/md4.c.i
 .PHONY : md4.c.i
 
 md4.s: md4.c.s
@@ -1707,7 +1707,7 @@ md4.s: md4.c.s
 
 # target to generate assembly for a file
 md4.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/md4.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/md4.c.s
 .PHONY : md4.c.s
 
 md5.obj: md5.c.obj
@@ -1715,7 +1715,7 @@ md5.obj: md5.c.obj
 
 # target to build an object file
 md5.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/md5.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/md5.c.obj
 .PHONY : md5.c.obj
 
 md5.i: md5.c.i
@@ -1723,7 +1723,7 @@ md5.i: md5.c.i
 
 # target to preprocess a source file
 md5.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/md5.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/md5.c.i
 .PHONY : md5.c.i
 
 md5.s: md5.c.s
@@ -1731,7 +1731,7 @@ md5.s: md5.c.s
 
 # target to generate assembly for a file
 md5.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/md5.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/md5.c.s
 .PHONY : md5.c.s
 
 memdebug.obj: memdebug.c.obj
@@ -1739,7 +1739,7 @@ memdebug.obj: memdebug.c.obj
 
 # target to build an object file
 memdebug.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/memdebug.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/memdebug.c.obj
 .PHONY : memdebug.c.obj
 
 memdebug.i: memdebug.c.i
@@ -1747,7 +1747,7 @@ memdebug.i: memdebug.c.i
 
 # target to preprocess a source file
 memdebug.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/memdebug.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/memdebug.c.i
 .PHONY : memdebug.c.i
 
 memdebug.s: memdebug.c.s
@@ -1755,7 +1755,7 @@ memdebug.s: memdebug.c.s
 
 # target to generate assembly for a file
 memdebug.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/memdebug.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/memdebug.c.s
 .PHONY : memdebug.c.s
 
 mime.obj: mime.c.obj
@@ -1763,7 +1763,7 @@ mime.obj: mime.c.obj
 
 # target to build an object file
 mime.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/mime.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/mime.c.obj
 .PHONY : mime.c.obj
 
 mime.i: mime.c.i
@@ -1771,7 +1771,7 @@ mime.i: mime.c.i
 
 # target to preprocess a source file
 mime.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/mime.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/mime.c.i
 .PHONY : mime.c.i
 
 mime.s: mime.c.s
@@ -1779,7 +1779,7 @@ mime.s: mime.c.s
 
 # target to generate assembly for a file
 mime.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/mime.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/mime.c.s
 .PHONY : mime.c.s
 
 mprintf.obj: mprintf.c.obj
@@ -1787,7 +1787,7 @@ mprintf.obj: mprintf.c.obj
 
 # target to build an object file
 mprintf.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/mprintf.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/mprintf.c.obj
 .PHONY : mprintf.c.obj
 
 mprintf.i: mprintf.c.i
@@ -1795,7 +1795,7 @@ mprintf.i: mprintf.c.i
 
 # target to preprocess a source file
 mprintf.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/mprintf.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/mprintf.c.i
 .PHONY : mprintf.c.i
 
 mprintf.s: mprintf.c.s
@@ -1803,7 +1803,7 @@ mprintf.s: mprintf.c.s
 
 # target to generate assembly for a file
 mprintf.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/mprintf.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/mprintf.c.s
 .PHONY : mprintf.c.s
 
 multi.obj: multi.c.obj
@@ -1811,7 +1811,7 @@ multi.obj: multi.c.obj
 
 # target to build an object file
 multi.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/multi.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/multi.c.obj
 .PHONY : multi.c.obj
 
 multi.i: multi.c.i
@@ -1819,7 +1819,7 @@ multi.i: multi.c.i
 
 # target to preprocess a source file
 multi.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/multi.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/multi.c.i
 .PHONY : multi.c.i
 
 multi.s: multi.c.s
@@ -1827,7 +1827,7 @@ multi.s: multi.c.s
 
 # target to generate assembly for a file
 multi.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/multi.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/multi.c.s
 .PHONY : multi.c.s
 
 netrc.obj: netrc.c.obj
@@ -1835,7 +1835,7 @@ netrc.obj: netrc.c.obj
 
 # target to build an object file
 netrc.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/netrc.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/netrc.c.obj
 .PHONY : netrc.c.obj
 
 netrc.i: netrc.c.i
@@ -1843,7 +1843,7 @@ netrc.i: netrc.c.i
 
 # target to preprocess a source file
 netrc.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/netrc.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/netrc.c.i
 .PHONY : netrc.c.i
 
 netrc.s: netrc.c.s
@@ -1851,7 +1851,7 @@ netrc.s: netrc.c.s
 
 # target to generate assembly for a file
 netrc.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/netrc.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/netrc.c.s
 .PHONY : netrc.c.s
 
 non-ascii.obj: non-ascii.c.obj
@@ -1859,7 +1859,7 @@ non-ascii.obj: non-ascii.c.obj
 
 # target to build an object file
 non-ascii.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/non-ascii.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/non-ascii.c.obj
 .PHONY : non-ascii.c.obj
 
 non-ascii.i: non-ascii.c.i
@@ -1867,7 +1867,7 @@ non-ascii.i: non-ascii.c.i
 
 # target to preprocess a source file
 non-ascii.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/non-ascii.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/non-ascii.c.i
 .PHONY : non-ascii.c.i
 
 non-ascii.s: non-ascii.c.s
@@ -1875,7 +1875,7 @@ non-ascii.s: non-ascii.c.s
 
 # target to generate assembly for a file
 non-ascii.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/non-ascii.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/non-ascii.c.s
 .PHONY : non-ascii.c.s
 
 nonblock.obj: nonblock.c.obj
@@ -1883,7 +1883,7 @@ nonblock.obj: nonblock.c.obj
 
 # target to build an object file
 nonblock.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/nonblock.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/nonblock.c.obj
 .PHONY : nonblock.c.obj
 
 nonblock.i: nonblock.c.i
@@ -1891,7 +1891,7 @@ nonblock.i: nonblock.c.i
 
 # target to preprocess a source file
 nonblock.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/nonblock.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/nonblock.c.i
 .PHONY : nonblock.c.i
 
 nonblock.s: nonblock.c.s
@@ -1899,7 +1899,7 @@ nonblock.s: nonblock.c.s
 
 # target to generate assembly for a file
 nonblock.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/nonblock.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/nonblock.c.s
 .PHONY : nonblock.c.s
 
 openldap.obj: openldap.c.obj
@@ -1907,7 +1907,7 @@ openldap.obj: openldap.c.obj
 
 # target to build an object file
 openldap.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/openldap.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/openldap.c.obj
 .PHONY : openldap.c.obj
 
 openldap.i: openldap.c.i
@@ -1915,7 +1915,7 @@ openldap.i: openldap.c.i
 
 # target to preprocess a source file
 openldap.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/openldap.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/openldap.c.i
 .PHONY : openldap.c.i
 
 openldap.s: openldap.c.s
@@ -1923,7 +1923,7 @@ openldap.s: openldap.c.s
 
 # target to generate assembly for a file
 openldap.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/openldap.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/openldap.c.s
 .PHONY : openldap.c.s
 
 parsedate.obj: parsedate.c.obj
@@ -1931,7 +1931,7 @@ parsedate.obj: parsedate.c.obj
 
 # target to build an object file
 parsedate.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/parsedate.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/parsedate.c.obj
 .PHONY : parsedate.c.obj
 
 parsedate.i: parsedate.c.i
@@ -1939,7 +1939,7 @@ parsedate.i: parsedate.c.i
 
 # target to preprocess a source file
 parsedate.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/parsedate.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/parsedate.c.i
 .PHONY : parsedate.c.i
 
 parsedate.s: parsedate.c.s
@@ -1947,7 +1947,7 @@ parsedate.s: parsedate.c.s
 
 # target to generate assembly for a file
 parsedate.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/parsedate.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/parsedate.c.s
 .PHONY : parsedate.c.s
 
 pingpong.obj: pingpong.c.obj
@@ -1955,7 +1955,7 @@ pingpong.obj: pingpong.c.obj
 
 # target to build an object file
 pingpong.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/pingpong.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/pingpong.c.obj
 .PHONY : pingpong.c.obj
 
 pingpong.i: pingpong.c.i
@@ -1963,7 +1963,7 @@ pingpong.i: pingpong.c.i
 
 # target to preprocess a source file
 pingpong.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/pingpong.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/pingpong.c.i
 .PHONY : pingpong.c.i
 
 pingpong.s: pingpong.c.s
@@ -1971,7 +1971,7 @@ pingpong.s: pingpong.c.s
 
 # target to generate assembly for a file
 pingpong.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/pingpong.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/pingpong.c.s
 .PHONY : pingpong.c.s
 
 pop3.obj: pop3.c.obj
@@ -1979,7 +1979,7 @@ pop3.obj: pop3.c.obj
 
 # target to build an object file
 pop3.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/pop3.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/pop3.c.obj
 .PHONY : pop3.c.obj
 
 pop3.i: pop3.c.i
@@ -1987,7 +1987,7 @@ pop3.i: pop3.c.i
 
 # target to preprocess a source file
 pop3.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/pop3.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/pop3.c.i
 .PHONY : pop3.c.i
 
 pop3.s: pop3.c.s
@@ -1995,7 +1995,7 @@ pop3.s: pop3.c.s
 
 # target to generate assembly for a file
 pop3.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/pop3.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/pop3.c.s
 .PHONY : pop3.c.s
 
 progress.obj: progress.c.obj
@@ -2003,7 +2003,7 @@ progress.obj: progress.c.obj
 
 # target to build an object file
 progress.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/progress.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/progress.c.obj
 .PHONY : progress.c.obj
 
 progress.i: progress.c.i
@@ -2011,7 +2011,7 @@ progress.i: progress.c.i
 
 # target to preprocess a source file
 progress.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/progress.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/progress.c.i
 .PHONY : progress.c.i
 
 progress.s: progress.c.s
@@ -2019,7 +2019,7 @@ progress.s: progress.c.s
 
 # target to generate assembly for a file
 progress.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/progress.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/progress.c.s
 .PHONY : progress.c.s
 
 psl.obj: psl.c.obj
@@ -2027,7 +2027,7 @@ psl.obj: psl.c.obj
 
 # target to build an object file
 psl.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/psl.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/psl.c.obj
 .PHONY : psl.c.obj
 
 psl.i: psl.c.i
@@ -2035,7 +2035,7 @@ psl.i: psl.c.i
 
 # target to preprocess a source file
 psl.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/psl.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/psl.c.i
 .PHONY : psl.c.i
 
 psl.s: psl.c.s
@@ -2043,7 +2043,7 @@ psl.s: psl.c.s
 
 # target to generate assembly for a file
 psl.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/psl.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/psl.c.s
 .PHONY : psl.c.s
 
 rand.obj: rand.c.obj
@@ -2051,7 +2051,7 @@ rand.obj: rand.c.obj
 
 # target to build an object file
 rand.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/rand.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/rand.c.obj
 .PHONY : rand.c.obj
 
 rand.i: rand.c.i
@@ -2059,7 +2059,7 @@ rand.i: rand.c.i
 
 # target to preprocess a source file
 rand.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/rand.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/rand.c.i
 .PHONY : rand.c.i
 
 rand.s: rand.c.s
@@ -2067,7 +2067,7 @@ rand.s: rand.c.s
 
 # target to generate assembly for a file
 rand.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/rand.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/rand.c.s
 .PHONY : rand.c.s
 
 rename.obj: rename.c.obj
@@ -2075,7 +2075,7 @@ rename.obj: rename.c.obj
 
 # target to build an object file
 rename.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/rename.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/rename.c.obj
 .PHONY : rename.c.obj
 
 rename.i: rename.c.i
@@ -2083,7 +2083,7 @@ rename.i: rename.c.i
 
 # target to preprocess a source file
 rename.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/rename.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/rename.c.i
 .PHONY : rename.c.i
 
 rename.s: rename.c.s
@@ -2091,7 +2091,7 @@ rename.s: rename.c.s
 
 # target to generate assembly for a file
 rename.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/rename.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/rename.c.s
 .PHONY : rename.c.s
 
 rtsp.obj: rtsp.c.obj
@@ -2099,7 +2099,7 @@ rtsp.obj: rtsp.c.obj
 
 # target to build an object file
 rtsp.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/rtsp.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/rtsp.c.obj
 .PHONY : rtsp.c.obj
 
 rtsp.i: rtsp.c.i
@@ -2107,7 +2107,7 @@ rtsp.i: rtsp.c.i
 
 # target to preprocess a source file
 rtsp.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/rtsp.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/rtsp.c.i
 .PHONY : rtsp.c.i
 
 rtsp.s: rtsp.c.s
@@ -2115,7 +2115,7 @@ rtsp.s: rtsp.c.s
 
 # target to generate assembly for a file
 rtsp.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/rtsp.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/rtsp.c.s
 .PHONY : rtsp.c.s
 
 security.obj: security.c.obj
@@ -2123,7 +2123,7 @@ security.obj: security.c.obj
 
 # target to build an object file
 security.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/security.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/security.c.obj
 .PHONY : security.c.obj
 
 security.i: security.c.i
@@ -2131,7 +2131,7 @@ security.i: security.c.i
 
 # target to preprocess a source file
 security.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/security.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/security.c.i
 .PHONY : security.c.i
 
 security.s: security.c.s
@@ -2139,7 +2139,7 @@ security.s: security.c.s
 
 # target to generate assembly for a file
 security.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/security.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/security.c.s
 .PHONY : security.c.s
 
 select.obj: select.c.obj
@@ -2147,7 +2147,7 @@ select.obj: select.c.obj
 
 # target to build an object file
 select.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/select.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/select.c.obj
 .PHONY : select.c.obj
 
 select.i: select.c.i
@@ -2155,7 +2155,7 @@ select.i: select.c.i
 
 # target to preprocess a source file
 select.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/select.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/select.c.i
 .PHONY : select.c.i
 
 select.s: select.c.s
@@ -2163,7 +2163,7 @@ select.s: select.c.s
 
 # target to generate assembly for a file
 select.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/select.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/select.c.s
 .PHONY : select.c.s
 
 sendf.obj: sendf.c.obj
@@ -2171,7 +2171,7 @@ sendf.obj: sendf.c.obj
 
 # target to build an object file
 sendf.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/sendf.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/sendf.c.obj
 .PHONY : sendf.c.obj
 
 sendf.i: sendf.c.i
@@ -2179,7 +2179,7 @@ sendf.i: sendf.c.i
 
 # target to preprocess a source file
 sendf.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/sendf.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/sendf.c.i
 .PHONY : sendf.c.i
 
 sendf.s: sendf.c.s
@@ -2187,7 +2187,7 @@ sendf.s: sendf.c.s
 
 # target to generate assembly for a file
 sendf.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/sendf.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/sendf.c.s
 .PHONY : sendf.c.s
 
 setopt.obj: setopt.c.obj
@@ -2195,7 +2195,7 @@ setopt.obj: setopt.c.obj
 
 # target to build an object file
 setopt.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/setopt.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/setopt.c.obj
 .PHONY : setopt.c.obj
 
 setopt.i: setopt.c.i
@@ -2203,7 +2203,7 @@ setopt.i: setopt.c.i
 
 # target to preprocess a source file
 setopt.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/setopt.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/setopt.c.i
 .PHONY : setopt.c.i
 
 setopt.s: setopt.c.s
@@ -2211,7 +2211,7 @@ setopt.s: setopt.c.s
 
 # target to generate assembly for a file
 setopt.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/setopt.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/setopt.c.s
 .PHONY : setopt.c.s
 
 sha256.obj: sha256.c.obj
@@ -2219,7 +2219,7 @@ sha256.obj: sha256.c.obj
 
 # target to build an object file
 sha256.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/sha256.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/sha256.c.obj
 .PHONY : sha256.c.obj
 
 sha256.i: sha256.c.i
@@ -2227,7 +2227,7 @@ sha256.i: sha256.c.i
 
 # target to preprocess a source file
 sha256.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/sha256.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/sha256.c.i
 .PHONY : sha256.c.i
 
 sha256.s: sha256.c.s
@@ -2235,7 +2235,7 @@ sha256.s: sha256.c.s
 
 # target to generate assembly for a file
 sha256.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/sha256.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/sha256.c.s
 .PHONY : sha256.c.s
 
 share.obj: share.c.obj
@@ -2243,7 +2243,7 @@ share.obj: share.c.obj
 
 # target to build an object file
 share.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/share.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/share.c.obj
 .PHONY : share.c.obj
 
 share.i: share.c.i
@@ -2251,7 +2251,7 @@ share.i: share.c.i
 
 # target to preprocess a source file
 share.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/share.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/share.c.i
 .PHONY : share.c.i
 
 share.s: share.c.s
@@ -2259,7 +2259,7 @@ share.s: share.c.s
 
 # target to generate assembly for a file
 share.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/share.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/share.c.s
 .PHONY : share.c.s
 
 slist.obj: slist.c.obj
@@ -2267,7 +2267,7 @@ slist.obj: slist.c.obj
 
 # target to build an object file
 slist.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/slist.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/slist.c.obj
 .PHONY : slist.c.obj
 
 slist.i: slist.c.i
@@ -2275,7 +2275,7 @@ slist.i: slist.c.i
 
 # target to preprocess a source file
 slist.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/slist.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/slist.c.i
 .PHONY : slist.c.i
 
 slist.s: slist.c.s
@@ -2283,7 +2283,7 @@ slist.s: slist.c.s
 
 # target to generate assembly for a file
 slist.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/slist.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/slist.c.s
 .PHONY : slist.c.s
 
 smb.obj: smb.c.obj
@@ -2291,7 +2291,7 @@ smb.obj: smb.c.obj
 
 # target to build an object file
 smb.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/smb.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/smb.c.obj
 .PHONY : smb.c.obj
 
 smb.i: smb.c.i
@@ -2299,7 +2299,7 @@ smb.i: smb.c.i
 
 # target to preprocess a source file
 smb.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/smb.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/smb.c.i
 .PHONY : smb.c.i
 
 smb.s: smb.c.s
@@ -2307,7 +2307,7 @@ smb.s: smb.c.s
 
 # target to generate assembly for a file
 smb.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/smb.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/smb.c.s
 .PHONY : smb.c.s
 
 smtp.obj: smtp.c.obj
@@ -2315,7 +2315,7 @@ smtp.obj: smtp.c.obj
 
 # target to build an object file
 smtp.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/smtp.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/smtp.c.obj
 .PHONY : smtp.c.obj
 
 smtp.i: smtp.c.i
@@ -2323,7 +2323,7 @@ smtp.i: smtp.c.i
 
 # target to preprocess a source file
 smtp.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/smtp.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/smtp.c.i
 .PHONY : smtp.c.i
 
 smtp.s: smtp.c.s
@@ -2331,7 +2331,7 @@ smtp.s: smtp.c.s
 
 # target to generate assembly for a file
 smtp.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/smtp.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/smtp.c.s
 .PHONY : smtp.c.s
 
 socketpair.obj: socketpair.c.obj
@@ -2339,7 +2339,7 @@ socketpair.obj: socketpair.c.obj
 
 # target to build an object file
 socketpair.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/socketpair.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/socketpair.c.obj
 .PHONY : socketpair.c.obj
 
 socketpair.i: socketpair.c.i
@@ -2347,7 +2347,7 @@ socketpair.i: socketpair.c.i
 
 # target to preprocess a source file
 socketpair.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/socketpair.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/socketpair.c.i
 .PHONY : socketpair.c.i
 
 socketpair.s: socketpair.c.s
@@ -2355,7 +2355,7 @@ socketpair.s: socketpair.c.s
 
 # target to generate assembly for a file
 socketpair.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/socketpair.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/socketpair.c.s
 .PHONY : socketpair.c.s
 
 socks.obj: socks.c.obj
@@ -2363,7 +2363,7 @@ socks.obj: socks.c.obj
 
 # target to build an object file
 socks.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/socks.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/socks.c.obj
 .PHONY : socks.c.obj
 
 socks.i: socks.c.i
@@ -2371,7 +2371,7 @@ socks.i: socks.c.i
 
 # target to preprocess a source file
 socks.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/socks.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/socks.c.i
 .PHONY : socks.c.i
 
 socks.s: socks.c.s
@@ -2379,7 +2379,7 @@ socks.s: socks.c.s
 
 # target to generate assembly for a file
 socks.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/socks.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/socks.c.s
 .PHONY : socks.c.s
 
 socks_gssapi.obj: socks_gssapi.c.obj
@@ -2387,7 +2387,7 @@ socks_gssapi.obj: socks_gssapi.c.obj
 
 # target to build an object file
 socks_gssapi.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/socks_gssapi.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/socks_gssapi.c.obj
 .PHONY : socks_gssapi.c.obj
 
 socks_gssapi.i: socks_gssapi.c.i
@@ -2395,7 +2395,7 @@ socks_gssapi.i: socks_gssapi.c.i
 
 # target to preprocess a source file
 socks_gssapi.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/socks_gssapi.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/socks_gssapi.c.i
 .PHONY : socks_gssapi.c.i
 
 socks_gssapi.s: socks_gssapi.c.s
@@ -2403,7 +2403,7 @@ socks_gssapi.s: socks_gssapi.c.s
 
 # target to generate assembly for a file
 socks_gssapi.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/socks_gssapi.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/socks_gssapi.c.s
 .PHONY : socks_gssapi.c.s
 
 socks_sspi.obj: socks_sspi.c.obj
@@ -2411,7 +2411,7 @@ socks_sspi.obj: socks_sspi.c.obj
 
 # target to build an object file
 socks_sspi.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/socks_sspi.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/socks_sspi.c.obj
 .PHONY : socks_sspi.c.obj
 
 socks_sspi.i: socks_sspi.c.i
@@ -2419,7 +2419,7 @@ socks_sspi.i: socks_sspi.c.i
 
 # target to preprocess a source file
 socks_sspi.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/socks_sspi.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/socks_sspi.c.i
 .PHONY : socks_sspi.c.i
 
 socks_sspi.s: socks_sspi.c.s
@@ -2427,7 +2427,7 @@ socks_sspi.s: socks_sspi.c.s
 
 # target to generate assembly for a file
 socks_sspi.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/socks_sspi.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/socks_sspi.c.s
 .PHONY : socks_sspi.c.s
 
 speedcheck.obj: speedcheck.c.obj
@@ -2435,7 +2435,7 @@ speedcheck.obj: speedcheck.c.obj
 
 # target to build an object file
 speedcheck.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/speedcheck.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/speedcheck.c.obj
 .PHONY : speedcheck.c.obj
 
 speedcheck.i: speedcheck.c.i
@@ -2443,7 +2443,7 @@ speedcheck.i: speedcheck.c.i
 
 # target to preprocess a source file
 speedcheck.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/speedcheck.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/speedcheck.c.i
 .PHONY : speedcheck.c.i
 
 speedcheck.s: speedcheck.c.s
@@ -2451,7 +2451,7 @@ speedcheck.s: speedcheck.c.s
 
 # target to generate assembly for a file
 speedcheck.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/speedcheck.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/speedcheck.c.s
 .PHONY : speedcheck.c.s
 
 splay.obj: splay.c.obj
@@ -2459,7 +2459,7 @@ splay.obj: splay.c.obj
 
 # target to build an object file
 splay.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/splay.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/splay.c.obj
 .PHONY : splay.c.obj
 
 splay.i: splay.c.i
@@ -2467,7 +2467,7 @@ splay.i: splay.c.i
 
 # target to preprocess a source file
 splay.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/splay.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/splay.c.i
 .PHONY : splay.c.i
 
 splay.s: splay.c.s
@@ -2475,7 +2475,7 @@ splay.s: splay.c.s
 
 # target to generate assembly for a file
 splay.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/splay.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/splay.c.s
 .PHONY : splay.c.s
 
 strcase.obj: strcase.c.obj
@@ -2483,7 +2483,7 @@ strcase.obj: strcase.c.obj
 
 # target to build an object file
 strcase.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/strcase.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/strcase.c.obj
 .PHONY : strcase.c.obj
 
 strcase.i: strcase.c.i
@@ -2491,7 +2491,7 @@ strcase.i: strcase.c.i
 
 # target to preprocess a source file
 strcase.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/strcase.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/strcase.c.i
 .PHONY : strcase.c.i
 
 strcase.s: strcase.c.s
@@ -2499,7 +2499,7 @@ strcase.s: strcase.c.s
 
 # target to generate assembly for a file
 strcase.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/strcase.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/strcase.c.s
 .PHONY : strcase.c.s
 
 strdup.obj: strdup.c.obj
@@ -2507,7 +2507,7 @@ strdup.obj: strdup.c.obj
 
 # target to build an object file
 strdup.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/strdup.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/strdup.c.obj
 .PHONY : strdup.c.obj
 
 strdup.i: strdup.c.i
@@ -2515,7 +2515,7 @@ strdup.i: strdup.c.i
 
 # target to preprocess a source file
 strdup.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/strdup.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/strdup.c.i
 .PHONY : strdup.c.i
 
 strdup.s: strdup.c.s
@@ -2523,7 +2523,7 @@ strdup.s: strdup.c.s
 
 # target to generate assembly for a file
 strdup.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/strdup.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/strdup.c.s
 .PHONY : strdup.c.s
 
 strerror.obj: strerror.c.obj
@@ -2531,7 +2531,7 @@ strerror.obj: strerror.c.obj
 
 # target to build an object file
 strerror.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/strerror.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/strerror.c.obj
 .PHONY : strerror.c.obj
 
 strerror.i: strerror.c.i
@@ -2539,7 +2539,7 @@ strerror.i: strerror.c.i
 
 # target to preprocess a source file
 strerror.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/strerror.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/strerror.c.i
 .PHONY : strerror.c.i
 
 strerror.s: strerror.c.s
@@ -2547,7 +2547,7 @@ strerror.s: strerror.c.s
 
 # target to generate assembly for a file
 strerror.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/strerror.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/strerror.c.s
 .PHONY : strerror.c.s
 
 strtok.obj: strtok.c.obj
@@ -2555,7 +2555,7 @@ strtok.obj: strtok.c.obj
 
 # target to build an object file
 strtok.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/strtok.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/strtok.c.obj
 .PHONY : strtok.c.obj
 
 strtok.i: strtok.c.i
@@ -2563,7 +2563,7 @@ strtok.i: strtok.c.i
 
 # target to preprocess a source file
 strtok.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/strtok.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/strtok.c.i
 .PHONY : strtok.c.i
 
 strtok.s: strtok.c.s
@@ -2571,7 +2571,7 @@ strtok.s: strtok.c.s
 
 # target to generate assembly for a file
 strtok.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/strtok.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/strtok.c.s
 .PHONY : strtok.c.s
 
 strtoofft.obj: strtoofft.c.obj
@@ -2579,7 +2579,7 @@ strtoofft.obj: strtoofft.c.obj
 
 # target to build an object file
 strtoofft.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/strtoofft.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/strtoofft.c.obj
 .PHONY : strtoofft.c.obj
 
 strtoofft.i: strtoofft.c.i
@@ -2587,7 +2587,7 @@ strtoofft.i: strtoofft.c.i
 
 # target to preprocess a source file
 strtoofft.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/strtoofft.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/strtoofft.c.i
 .PHONY : strtoofft.c.i
 
 strtoofft.s: strtoofft.c.s
@@ -2595,7 +2595,7 @@ strtoofft.s: strtoofft.c.s
 
 # target to generate assembly for a file
 strtoofft.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/strtoofft.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/strtoofft.c.s
 .PHONY : strtoofft.c.s
 
 system_win32.obj: system_win32.c.obj
@@ -2603,7 +2603,7 @@ system_win32.obj: system_win32.c.obj
 
 # target to build an object file
 system_win32.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/system_win32.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/system_win32.c.obj
 .PHONY : system_win32.c.obj
 
 system_win32.i: system_win32.c.i
@@ -2611,7 +2611,7 @@ system_win32.i: system_win32.c.i
 
 # target to preprocess a source file
 system_win32.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/system_win32.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/system_win32.c.i
 .PHONY : system_win32.c.i
 
 system_win32.s: system_win32.c.s
@@ -2619,7 +2619,7 @@ system_win32.s: system_win32.c.s
 
 # target to generate assembly for a file
 system_win32.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/system_win32.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/system_win32.c.s
 .PHONY : system_win32.c.s
 
 telnet.obj: telnet.c.obj
@@ -2627,7 +2627,7 @@ telnet.obj: telnet.c.obj
 
 # target to build an object file
 telnet.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/telnet.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/telnet.c.obj
 .PHONY : telnet.c.obj
 
 telnet.i: telnet.c.i
@@ -2635,7 +2635,7 @@ telnet.i: telnet.c.i
 
 # target to preprocess a source file
 telnet.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/telnet.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/telnet.c.i
 .PHONY : telnet.c.i
 
 telnet.s: telnet.c.s
@@ -2643,7 +2643,7 @@ telnet.s: telnet.c.s
 
 # target to generate assembly for a file
 telnet.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/telnet.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/telnet.c.s
 .PHONY : telnet.c.s
 
 tftp.obj: tftp.c.obj
@@ -2651,7 +2651,7 @@ tftp.obj: tftp.c.obj
 
 # target to build an object file
 tftp.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/tftp.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/tftp.c.obj
 .PHONY : tftp.c.obj
 
 tftp.i: tftp.c.i
@@ -2659,7 +2659,7 @@ tftp.i: tftp.c.i
 
 # target to preprocess a source file
 tftp.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/tftp.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/tftp.c.i
 .PHONY : tftp.c.i
 
 tftp.s: tftp.c.s
@@ -2667,7 +2667,7 @@ tftp.s: tftp.c.s
 
 # target to generate assembly for a file
 tftp.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/tftp.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/tftp.c.s
 .PHONY : tftp.c.s
 
 timeval.obj: timeval.c.obj
@@ -2675,7 +2675,7 @@ timeval.obj: timeval.c.obj
 
 # target to build an object file
 timeval.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/timeval.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/timeval.c.obj
 .PHONY : timeval.c.obj
 
 timeval.i: timeval.c.i
@@ -2683,7 +2683,7 @@ timeval.i: timeval.c.i
 
 # target to preprocess a source file
 timeval.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/timeval.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/timeval.c.i
 .PHONY : timeval.c.i
 
 timeval.s: timeval.c.s
@@ -2691,7 +2691,7 @@ timeval.s: timeval.c.s
 
 # target to generate assembly for a file
 timeval.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/timeval.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/timeval.c.s
 .PHONY : timeval.c.s
 
 transfer.obj: transfer.c.obj
@@ -2699,7 +2699,7 @@ transfer.obj: transfer.c.obj
 
 # target to build an object file
 transfer.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/transfer.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/transfer.c.obj
 .PHONY : transfer.c.obj
 
 transfer.i: transfer.c.i
@@ -2707,7 +2707,7 @@ transfer.i: transfer.c.i
 
 # target to preprocess a source file
 transfer.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/transfer.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/transfer.c.i
 .PHONY : transfer.c.i
 
 transfer.s: transfer.c.s
@@ -2715,7 +2715,7 @@ transfer.s: transfer.c.s
 
 # target to generate assembly for a file
 transfer.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/transfer.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/transfer.c.s
 .PHONY : transfer.c.s
 
 url.obj: url.c.obj
@@ -2723,7 +2723,7 @@ url.obj: url.c.obj
 
 # target to build an object file
 url.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/url.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/url.c.obj
 .PHONY : url.c.obj
 
 url.i: url.c.i
@@ -2731,7 +2731,7 @@ url.i: url.c.i
 
 # target to preprocess a source file
 url.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/url.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/url.c.i
 .PHONY : url.c.i
 
 url.s: url.c.s
@@ -2739,7 +2739,7 @@ url.s: url.c.s
 
 # target to generate assembly for a file
 url.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/url.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/url.c.s
 .PHONY : url.c.s
 
 urlapi.obj: urlapi.c.obj
@@ -2747,7 +2747,7 @@ urlapi.obj: urlapi.c.obj
 
 # target to build an object file
 urlapi.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/urlapi.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/urlapi.c.obj
 .PHONY : urlapi.c.obj
 
 urlapi.i: urlapi.c.i
@@ -2755,7 +2755,7 @@ urlapi.i: urlapi.c.i
 
 # target to preprocess a source file
 urlapi.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/urlapi.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/urlapi.c.i
 .PHONY : urlapi.c.i
 
 urlapi.s: urlapi.c.s
@@ -2763,7 +2763,7 @@ urlapi.s: urlapi.c.s
 
 # target to generate assembly for a file
 urlapi.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/urlapi.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/urlapi.c.s
 .PHONY : urlapi.c.s
 
 vauth/cleartext.obj: vauth/cleartext.c.obj
@@ -2771,7 +2771,7 @@ vauth/cleartext.obj: vauth/cleartext.c.obj
 
 # target to build an object file
 vauth/cleartext.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/cleartext.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/cleartext.c.obj
 .PHONY : vauth/cleartext.c.obj
 
 vauth/cleartext.i: vauth/cleartext.c.i
@@ -2779,7 +2779,7 @@ vauth/cleartext.i: vauth/cleartext.c.i
 
 # target to preprocess a source file
 vauth/cleartext.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/cleartext.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/cleartext.c.i
 .PHONY : vauth/cleartext.c.i
 
 vauth/cleartext.s: vauth/cleartext.c.s
@@ -2787,7 +2787,7 @@ vauth/cleartext.s: vauth/cleartext.c.s
 
 # target to generate assembly for a file
 vauth/cleartext.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/cleartext.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/cleartext.c.s
 .PHONY : vauth/cleartext.c.s
 
 vauth/cram.obj: vauth/cram.c.obj
@@ -2795,7 +2795,7 @@ vauth/cram.obj: vauth/cram.c.obj
 
 # target to build an object file
 vauth/cram.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/cram.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/cram.c.obj
 .PHONY : vauth/cram.c.obj
 
 vauth/cram.i: vauth/cram.c.i
@@ -2803,7 +2803,7 @@ vauth/cram.i: vauth/cram.c.i
 
 # target to preprocess a source file
 vauth/cram.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/cram.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/cram.c.i
 .PHONY : vauth/cram.c.i
 
 vauth/cram.s: vauth/cram.c.s
@@ -2811,7 +2811,7 @@ vauth/cram.s: vauth/cram.c.s
 
 # target to generate assembly for a file
 vauth/cram.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/cram.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/cram.c.s
 .PHONY : vauth/cram.c.s
 
 vauth/digest.obj: vauth/digest.c.obj
@@ -2819,7 +2819,7 @@ vauth/digest.obj: vauth/digest.c.obj
 
 # target to build an object file
 vauth/digest.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/digest.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/digest.c.obj
 .PHONY : vauth/digest.c.obj
 
 vauth/digest.i: vauth/digest.c.i
@@ -2827,7 +2827,7 @@ vauth/digest.i: vauth/digest.c.i
 
 # target to preprocess a source file
 vauth/digest.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/digest.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/digest.c.i
 .PHONY : vauth/digest.c.i
 
 vauth/digest.s: vauth/digest.c.s
@@ -2835,7 +2835,7 @@ vauth/digest.s: vauth/digest.c.s
 
 # target to generate assembly for a file
 vauth/digest.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/digest.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/digest.c.s
 .PHONY : vauth/digest.c.s
 
 vauth/digest_sspi.obj: vauth/digest_sspi.c.obj
@@ -2843,7 +2843,7 @@ vauth/digest_sspi.obj: vauth/digest_sspi.c.obj
 
 # target to build an object file
 vauth/digest_sspi.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/digest_sspi.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/digest_sspi.c.obj
 .PHONY : vauth/digest_sspi.c.obj
 
 vauth/digest_sspi.i: vauth/digest_sspi.c.i
@@ -2851,7 +2851,7 @@ vauth/digest_sspi.i: vauth/digest_sspi.c.i
 
 # target to preprocess a source file
 vauth/digest_sspi.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/digest_sspi.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/digest_sspi.c.i
 .PHONY : vauth/digest_sspi.c.i
 
 vauth/digest_sspi.s: vauth/digest_sspi.c.s
@@ -2859,7 +2859,7 @@ vauth/digest_sspi.s: vauth/digest_sspi.c.s
 
 # target to generate assembly for a file
 vauth/digest_sspi.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/digest_sspi.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/digest_sspi.c.s
 .PHONY : vauth/digest_sspi.c.s
 
 vauth/krb5_gssapi.obj: vauth/krb5_gssapi.c.obj
@@ -2867,7 +2867,7 @@ vauth/krb5_gssapi.obj: vauth/krb5_gssapi.c.obj
 
 # target to build an object file
 vauth/krb5_gssapi.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/krb5_gssapi.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/krb5_gssapi.c.obj
 .PHONY : vauth/krb5_gssapi.c.obj
 
 vauth/krb5_gssapi.i: vauth/krb5_gssapi.c.i
@@ -2875,7 +2875,7 @@ vauth/krb5_gssapi.i: vauth/krb5_gssapi.c.i
 
 # target to preprocess a source file
 vauth/krb5_gssapi.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/krb5_gssapi.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/krb5_gssapi.c.i
 .PHONY : vauth/krb5_gssapi.c.i
 
 vauth/krb5_gssapi.s: vauth/krb5_gssapi.c.s
@@ -2883,7 +2883,7 @@ vauth/krb5_gssapi.s: vauth/krb5_gssapi.c.s
 
 # target to generate assembly for a file
 vauth/krb5_gssapi.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/krb5_gssapi.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/krb5_gssapi.c.s
 .PHONY : vauth/krb5_gssapi.c.s
 
 vauth/krb5_sspi.obj: vauth/krb5_sspi.c.obj
@@ -2891,7 +2891,7 @@ vauth/krb5_sspi.obj: vauth/krb5_sspi.c.obj
 
 # target to build an object file
 vauth/krb5_sspi.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/krb5_sspi.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/krb5_sspi.c.obj
 .PHONY : vauth/krb5_sspi.c.obj
 
 vauth/krb5_sspi.i: vauth/krb5_sspi.c.i
@@ -2899,7 +2899,7 @@ vauth/krb5_sspi.i: vauth/krb5_sspi.c.i
 
 # target to preprocess a source file
 vauth/krb5_sspi.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/krb5_sspi.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/krb5_sspi.c.i
 .PHONY : vauth/krb5_sspi.c.i
 
 vauth/krb5_sspi.s: vauth/krb5_sspi.c.s
@@ -2907,7 +2907,7 @@ vauth/krb5_sspi.s: vauth/krb5_sspi.c.s
 
 # target to generate assembly for a file
 vauth/krb5_sspi.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/krb5_sspi.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/krb5_sspi.c.s
 .PHONY : vauth/krb5_sspi.c.s
 
 vauth/ntlm.obj: vauth/ntlm.c.obj
@@ -2915,7 +2915,7 @@ vauth/ntlm.obj: vauth/ntlm.c.obj
 
 # target to build an object file
 vauth/ntlm.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/ntlm.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/ntlm.c.obj
 .PHONY : vauth/ntlm.c.obj
 
 vauth/ntlm.i: vauth/ntlm.c.i
@@ -2923,7 +2923,7 @@ vauth/ntlm.i: vauth/ntlm.c.i
 
 # target to preprocess a source file
 vauth/ntlm.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/ntlm.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/ntlm.c.i
 .PHONY : vauth/ntlm.c.i
 
 vauth/ntlm.s: vauth/ntlm.c.s
@@ -2931,7 +2931,7 @@ vauth/ntlm.s: vauth/ntlm.c.s
 
 # target to generate assembly for a file
 vauth/ntlm.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/ntlm.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/ntlm.c.s
 .PHONY : vauth/ntlm.c.s
 
 vauth/ntlm_sspi.obj: vauth/ntlm_sspi.c.obj
@@ -2939,7 +2939,7 @@ vauth/ntlm_sspi.obj: vauth/ntlm_sspi.c.obj
 
 # target to build an object file
 vauth/ntlm_sspi.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/ntlm_sspi.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/ntlm_sspi.c.obj
 .PHONY : vauth/ntlm_sspi.c.obj
 
 vauth/ntlm_sspi.i: vauth/ntlm_sspi.c.i
@@ -2947,7 +2947,7 @@ vauth/ntlm_sspi.i: vauth/ntlm_sspi.c.i
 
 # target to preprocess a source file
 vauth/ntlm_sspi.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/ntlm_sspi.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/ntlm_sspi.c.i
 .PHONY : vauth/ntlm_sspi.c.i
 
 vauth/ntlm_sspi.s: vauth/ntlm_sspi.c.s
@@ -2955,7 +2955,7 @@ vauth/ntlm_sspi.s: vauth/ntlm_sspi.c.s
 
 # target to generate assembly for a file
 vauth/ntlm_sspi.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/ntlm_sspi.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/ntlm_sspi.c.s
 .PHONY : vauth/ntlm_sspi.c.s
 
 vauth/oauth2.obj: vauth/oauth2.c.obj
@@ -2963,7 +2963,7 @@ vauth/oauth2.obj: vauth/oauth2.c.obj
 
 # target to build an object file
 vauth/oauth2.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/oauth2.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/oauth2.c.obj
 .PHONY : vauth/oauth2.c.obj
 
 vauth/oauth2.i: vauth/oauth2.c.i
@@ -2971,7 +2971,7 @@ vauth/oauth2.i: vauth/oauth2.c.i
 
 # target to preprocess a source file
 vauth/oauth2.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/oauth2.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/oauth2.c.i
 .PHONY : vauth/oauth2.c.i
 
 vauth/oauth2.s: vauth/oauth2.c.s
@@ -2979,7 +2979,7 @@ vauth/oauth2.s: vauth/oauth2.c.s
 
 # target to generate assembly for a file
 vauth/oauth2.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/oauth2.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/oauth2.c.s
 .PHONY : vauth/oauth2.c.s
 
 vauth/spnego_gssapi.obj: vauth/spnego_gssapi.c.obj
@@ -2987,7 +2987,7 @@ vauth/spnego_gssapi.obj: vauth/spnego_gssapi.c.obj
 
 # target to build an object file
 vauth/spnego_gssapi.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/spnego_gssapi.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/spnego_gssapi.c.obj
 .PHONY : vauth/spnego_gssapi.c.obj
 
 vauth/spnego_gssapi.i: vauth/spnego_gssapi.c.i
@@ -2995,7 +2995,7 @@ vauth/spnego_gssapi.i: vauth/spnego_gssapi.c.i
 
 # target to preprocess a source file
 vauth/spnego_gssapi.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/spnego_gssapi.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/spnego_gssapi.c.i
 .PHONY : vauth/spnego_gssapi.c.i
 
 vauth/spnego_gssapi.s: vauth/spnego_gssapi.c.s
@@ -3003,7 +3003,7 @@ vauth/spnego_gssapi.s: vauth/spnego_gssapi.c.s
 
 # target to generate assembly for a file
 vauth/spnego_gssapi.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/spnego_gssapi.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/spnego_gssapi.c.s
 .PHONY : vauth/spnego_gssapi.c.s
 
 vauth/spnego_sspi.obj: vauth/spnego_sspi.c.obj
@@ -3011,7 +3011,7 @@ vauth/spnego_sspi.obj: vauth/spnego_sspi.c.obj
 
 # target to build an object file
 vauth/spnego_sspi.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/spnego_sspi.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/spnego_sspi.c.obj
 .PHONY : vauth/spnego_sspi.c.obj
 
 vauth/spnego_sspi.i: vauth/spnego_sspi.c.i
@@ -3019,7 +3019,7 @@ vauth/spnego_sspi.i: vauth/spnego_sspi.c.i
 
 # target to preprocess a source file
 vauth/spnego_sspi.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/spnego_sspi.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/spnego_sspi.c.i
 .PHONY : vauth/spnego_sspi.c.i
 
 vauth/spnego_sspi.s: vauth/spnego_sspi.c.s
@@ -3027,7 +3027,7 @@ vauth/spnego_sspi.s: vauth/spnego_sspi.c.s
 
 # target to generate assembly for a file
 vauth/spnego_sspi.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/spnego_sspi.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/spnego_sspi.c.s
 .PHONY : vauth/spnego_sspi.c.s
 
 vauth/vauth.obj: vauth/vauth.c.obj
@@ -3035,7 +3035,7 @@ vauth/vauth.obj: vauth/vauth.c.obj
 
 # target to build an object file
 vauth/vauth.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/vauth.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/vauth.c.obj
 .PHONY : vauth/vauth.c.obj
 
 vauth/vauth.i: vauth/vauth.c.i
@@ -3043,7 +3043,7 @@ vauth/vauth.i: vauth/vauth.c.i
 
 # target to preprocess a source file
 vauth/vauth.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/vauth.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/vauth.c.i
 .PHONY : vauth/vauth.c.i
 
 vauth/vauth.s: vauth/vauth.c.s
@@ -3051,7 +3051,7 @@ vauth/vauth.s: vauth/vauth.c.s
 
 # target to generate assembly for a file
 vauth/vauth.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/vauth.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vauth/vauth.c.s
 .PHONY : vauth/vauth.c.s
 
 version.obj: version.c.obj
@@ -3059,7 +3059,7 @@ version.obj: version.c.obj
 
 # target to build an object file
 version.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/version.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/version.c.obj
 .PHONY : version.c.obj
 
 version.i: version.c.i
@@ -3067,7 +3067,7 @@ version.i: version.c.i
 
 # target to preprocess a source file
 version.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/version.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/version.c.i
 .PHONY : version.c.i
 
 version.s: version.c.s
@@ -3075,7 +3075,7 @@ version.s: version.c.s
 
 # target to generate assembly for a file
 version.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/version.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/version.c.s
 .PHONY : version.c.s
 
 vquic/ngtcp2.obj: vquic/ngtcp2.c.obj
@@ -3083,7 +3083,7 @@ vquic/ngtcp2.obj: vquic/ngtcp2.c.obj
 
 # target to build an object file
 vquic/ngtcp2.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vquic/ngtcp2.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vquic/ngtcp2.c.obj
 .PHONY : vquic/ngtcp2.c.obj
 
 vquic/ngtcp2.i: vquic/ngtcp2.c.i
@@ -3091,7 +3091,7 @@ vquic/ngtcp2.i: vquic/ngtcp2.c.i
 
 # target to preprocess a source file
 vquic/ngtcp2.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vquic/ngtcp2.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vquic/ngtcp2.c.i
 .PHONY : vquic/ngtcp2.c.i
 
 vquic/ngtcp2.s: vquic/ngtcp2.c.s
@@ -3099,7 +3099,7 @@ vquic/ngtcp2.s: vquic/ngtcp2.c.s
 
 # target to generate assembly for a file
 vquic/ngtcp2.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vquic/ngtcp2.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vquic/ngtcp2.c.s
 .PHONY : vquic/ngtcp2.c.s
 
 vquic/quiche.obj: vquic/quiche.c.obj
@@ -3107,7 +3107,7 @@ vquic/quiche.obj: vquic/quiche.c.obj
 
 # target to build an object file
 vquic/quiche.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vquic/quiche.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vquic/quiche.c.obj
 .PHONY : vquic/quiche.c.obj
 
 vquic/quiche.i: vquic/quiche.c.i
@@ -3115,7 +3115,7 @@ vquic/quiche.i: vquic/quiche.c.i
 
 # target to preprocess a source file
 vquic/quiche.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vquic/quiche.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vquic/quiche.c.i
 .PHONY : vquic/quiche.c.i
 
 vquic/quiche.s: vquic/quiche.c.s
@@ -3123,7 +3123,7 @@ vquic/quiche.s: vquic/quiche.c.s
 
 # target to generate assembly for a file
 vquic/quiche.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vquic/quiche.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vquic/quiche.c.s
 .PHONY : vquic/quiche.c.s
 
 vssh/libssh.obj: vssh/libssh.c.obj
@@ -3131,7 +3131,7 @@ vssh/libssh.obj: vssh/libssh.c.obj
 
 # target to build an object file
 vssh/libssh.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vssh/libssh.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vssh/libssh.c.obj
 .PHONY : vssh/libssh.c.obj
 
 vssh/libssh.i: vssh/libssh.c.i
@@ -3139,7 +3139,7 @@ vssh/libssh.i: vssh/libssh.c.i
 
 # target to preprocess a source file
 vssh/libssh.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vssh/libssh.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vssh/libssh.c.i
 .PHONY : vssh/libssh.c.i
 
 vssh/libssh.s: vssh/libssh.c.s
@@ -3147,7 +3147,7 @@ vssh/libssh.s: vssh/libssh.c.s
 
 # target to generate assembly for a file
 vssh/libssh.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vssh/libssh.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vssh/libssh.c.s
 .PHONY : vssh/libssh.c.s
 
 vssh/libssh2.obj: vssh/libssh2.c.obj
@@ -3155,7 +3155,7 @@ vssh/libssh2.obj: vssh/libssh2.c.obj
 
 # target to build an object file
 vssh/libssh2.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vssh/libssh2.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vssh/libssh2.c.obj
 .PHONY : vssh/libssh2.c.obj
 
 vssh/libssh2.i: vssh/libssh2.c.i
@@ -3163,7 +3163,7 @@ vssh/libssh2.i: vssh/libssh2.c.i
 
 # target to preprocess a source file
 vssh/libssh2.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vssh/libssh2.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vssh/libssh2.c.i
 .PHONY : vssh/libssh2.c.i
 
 vssh/libssh2.s: vssh/libssh2.c.s
@@ -3171,7 +3171,7 @@ vssh/libssh2.s: vssh/libssh2.c.s
 
 # target to generate assembly for a file
 vssh/libssh2.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vssh/libssh2.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vssh/libssh2.c.s
 .PHONY : vssh/libssh2.c.s
 
 vssh/wolfssh.obj: vssh/wolfssh.c.obj
@@ -3179,7 +3179,7 @@ vssh/wolfssh.obj: vssh/wolfssh.c.obj
 
 # target to build an object file
 vssh/wolfssh.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vssh/wolfssh.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vssh/wolfssh.c.obj
 .PHONY : vssh/wolfssh.c.obj
 
 vssh/wolfssh.i: vssh/wolfssh.c.i
@@ -3187,7 +3187,7 @@ vssh/wolfssh.i: vssh/wolfssh.c.i
 
 # target to preprocess a source file
 vssh/wolfssh.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vssh/wolfssh.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vssh/wolfssh.c.i
 .PHONY : vssh/wolfssh.c.i
 
 vssh/wolfssh.s: vssh/wolfssh.c.s
@@ -3195,7 +3195,7 @@ vssh/wolfssh.s: vssh/wolfssh.c.s
 
 # target to generate assembly for a file
 vssh/wolfssh.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vssh/wolfssh.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vssh/wolfssh.c.s
 .PHONY : vssh/wolfssh.c.s
 
 vtls/bearssl.obj: vtls/bearssl.c.obj
@@ -3203,7 +3203,7 @@ vtls/bearssl.obj: vtls/bearssl.c.obj
 
 # target to build an object file
 vtls/bearssl.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/bearssl.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/bearssl.c.obj
 .PHONY : vtls/bearssl.c.obj
 
 vtls/bearssl.i: vtls/bearssl.c.i
@@ -3211,7 +3211,7 @@ vtls/bearssl.i: vtls/bearssl.c.i
 
 # target to preprocess a source file
 vtls/bearssl.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/bearssl.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/bearssl.c.i
 .PHONY : vtls/bearssl.c.i
 
 vtls/bearssl.s: vtls/bearssl.c.s
@@ -3219,7 +3219,7 @@ vtls/bearssl.s: vtls/bearssl.c.s
 
 # target to generate assembly for a file
 vtls/bearssl.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/bearssl.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/bearssl.c.s
 .PHONY : vtls/bearssl.c.s
 
 vtls/gskit.obj: vtls/gskit.c.obj
@@ -3227,7 +3227,7 @@ vtls/gskit.obj: vtls/gskit.c.obj
 
 # target to build an object file
 vtls/gskit.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/gskit.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/gskit.c.obj
 .PHONY : vtls/gskit.c.obj
 
 vtls/gskit.i: vtls/gskit.c.i
@@ -3235,7 +3235,7 @@ vtls/gskit.i: vtls/gskit.c.i
 
 # target to preprocess a source file
 vtls/gskit.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/gskit.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/gskit.c.i
 .PHONY : vtls/gskit.c.i
 
 vtls/gskit.s: vtls/gskit.c.s
@@ -3243,7 +3243,7 @@ vtls/gskit.s: vtls/gskit.c.s
 
 # target to generate assembly for a file
 vtls/gskit.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/gskit.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/gskit.c.s
 .PHONY : vtls/gskit.c.s
 
 vtls/gtls.obj: vtls/gtls.c.obj
@@ -3251,7 +3251,7 @@ vtls/gtls.obj: vtls/gtls.c.obj
 
 # target to build an object file
 vtls/gtls.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/gtls.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/gtls.c.obj
 .PHONY : vtls/gtls.c.obj
 
 vtls/gtls.i: vtls/gtls.c.i
@@ -3259,7 +3259,7 @@ vtls/gtls.i: vtls/gtls.c.i
 
 # target to preprocess a source file
 vtls/gtls.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/gtls.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/gtls.c.i
 .PHONY : vtls/gtls.c.i
 
 vtls/gtls.s: vtls/gtls.c.s
@@ -3267,7 +3267,7 @@ vtls/gtls.s: vtls/gtls.c.s
 
 # target to generate assembly for a file
 vtls/gtls.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/gtls.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/gtls.c.s
 .PHONY : vtls/gtls.c.s
 
 vtls/mbedtls.obj: vtls/mbedtls.c.obj
@@ -3275,7 +3275,7 @@ vtls/mbedtls.obj: vtls/mbedtls.c.obj
 
 # target to build an object file
 vtls/mbedtls.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mbedtls.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mbedtls.c.obj
 .PHONY : vtls/mbedtls.c.obj
 
 vtls/mbedtls.i: vtls/mbedtls.c.i
@@ -3283,7 +3283,7 @@ vtls/mbedtls.i: vtls/mbedtls.c.i
 
 # target to preprocess a source file
 vtls/mbedtls.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mbedtls.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mbedtls.c.i
 .PHONY : vtls/mbedtls.c.i
 
 vtls/mbedtls.s: vtls/mbedtls.c.s
@@ -3291,7 +3291,7 @@ vtls/mbedtls.s: vtls/mbedtls.c.s
 
 # target to generate assembly for a file
 vtls/mbedtls.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mbedtls.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mbedtls.c.s
 .PHONY : vtls/mbedtls.c.s
 
 vtls/mbedtls_threadlock.obj: vtls/mbedtls_threadlock.c.obj
@@ -3299,7 +3299,7 @@ vtls/mbedtls_threadlock.obj: vtls/mbedtls_threadlock.c.obj
 
 # target to build an object file
 vtls/mbedtls_threadlock.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mbedtls_threadlock.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mbedtls_threadlock.c.obj
 .PHONY : vtls/mbedtls_threadlock.c.obj
 
 vtls/mbedtls_threadlock.i: vtls/mbedtls_threadlock.c.i
@@ -3307,7 +3307,7 @@ vtls/mbedtls_threadlock.i: vtls/mbedtls_threadlock.c.i
 
 # target to preprocess a source file
 vtls/mbedtls_threadlock.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mbedtls_threadlock.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mbedtls_threadlock.c.i
 .PHONY : vtls/mbedtls_threadlock.c.i
 
 vtls/mbedtls_threadlock.s: vtls/mbedtls_threadlock.c.s
@@ -3315,7 +3315,7 @@ vtls/mbedtls_threadlock.s: vtls/mbedtls_threadlock.c.s
 
 # target to generate assembly for a file
 vtls/mbedtls_threadlock.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mbedtls_threadlock.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mbedtls_threadlock.c.s
 .PHONY : vtls/mbedtls_threadlock.c.s
 
 vtls/mesalink.obj: vtls/mesalink.c.obj
@@ -3323,7 +3323,7 @@ vtls/mesalink.obj: vtls/mesalink.c.obj
 
 # target to build an object file
 vtls/mesalink.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mesalink.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mesalink.c.obj
 .PHONY : vtls/mesalink.c.obj
 
 vtls/mesalink.i: vtls/mesalink.c.i
@@ -3331,7 +3331,7 @@ vtls/mesalink.i: vtls/mesalink.c.i
 
 # target to preprocess a source file
 vtls/mesalink.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mesalink.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mesalink.c.i
 .PHONY : vtls/mesalink.c.i
 
 vtls/mesalink.s: vtls/mesalink.c.s
@@ -3339,7 +3339,7 @@ vtls/mesalink.s: vtls/mesalink.c.s
 
 # target to generate assembly for a file
 vtls/mesalink.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mesalink.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/mesalink.c.s
 .PHONY : vtls/mesalink.c.s
 
 vtls/nss.obj: vtls/nss.c.obj
@@ -3347,7 +3347,7 @@ vtls/nss.obj: vtls/nss.c.obj
 
 # target to build an object file
 vtls/nss.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/nss.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/nss.c.obj
 .PHONY : vtls/nss.c.obj
 
 vtls/nss.i: vtls/nss.c.i
@@ -3355,7 +3355,7 @@ vtls/nss.i: vtls/nss.c.i
 
 # target to preprocess a source file
 vtls/nss.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/nss.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/nss.c.i
 .PHONY : vtls/nss.c.i
 
 vtls/nss.s: vtls/nss.c.s
@@ -3363,7 +3363,7 @@ vtls/nss.s: vtls/nss.c.s
 
 # target to generate assembly for a file
 vtls/nss.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/nss.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/nss.c.s
 .PHONY : vtls/nss.c.s
 
 vtls/openssl.obj: vtls/openssl.c.obj
@@ -3371,7 +3371,7 @@ vtls/openssl.obj: vtls/openssl.c.obj
 
 # target to build an object file
 vtls/openssl.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/openssl.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/openssl.c.obj
 .PHONY : vtls/openssl.c.obj
 
 vtls/openssl.i: vtls/openssl.c.i
@@ -3379,7 +3379,7 @@ vtls/openssl.i: vtls/openssl.c.i
 
 # target to preprocess a source file
 vtls/openssl.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/openssl.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/openssl.c.i
 .PHONY : vtls/openssl.c.i
 
 vtls/openssl.s: vtls/openssl.c.s
@@ -3387,7 +3387,7 @@ vtls/openssl.s: vtls/openssl.c.s
 
 # target to generate assembly for a file
 vtls/openssl.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/openssl.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/openssl.c.s
 .PHONY : vtls/openssl.c.s
 
 vtls/schannel.obj: vtls/schannel.c.obj
@@ -3395,7 +3395,7 @@ vtls/schannel.obj: vtls/schannel.c.obj
 
 # target to build an object file
 vtls/schannel.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/schannel.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/schannel.c.obj
 .PHONY : vtls/schannel.c.obj
 
 vtls/schannel.i: vtls/schannel.c.i
@@ -3403,7 +3403,7 @@ vtls/schannel.i: vtls/schannel.c.i
 
 # target to preprocess a source file
 vtls/schannel.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/schannel.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/schannel.c.i
 .PHONY : vtls/schannel.c.i
 
 vtls/schannel.s: vtls/schannel.c.s
@@ -3411,7 +3411,7 @@ vtls/schannel.s: vtls/schannel.c.s
 
 # target to generate assembly for a file
 vtls/schannel.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/schannel.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/schannel.c.s
 .PHONY : vtls/schannel.c.s
 
 vtls/schannel_verify.obj: vtls/schannel_verify.c.obj
@@ -3419,7 +3419,7 @@ vtls/schannel_verify.obj: vtls/schannel_verify.c.obj
 
 # target to build an object file
 vtls/schannel_verify.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/schannel_verify.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/schannel_verify.c.obj
 .PHONY : vtls/schannel_verify.c.obj
 
 vtls/schannel_verify.i: vtls/schannel_verify.c.i
@@ -3427,7 +3427,7 @@ vtls/schannel_verify.i: vtls/schannel_verify.c.i
 
 # target to preprocess a source file
 vtls/schannel_verify.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/schannel_verify.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/schannel_verify.c.i
 .PHONY : vtls/schannel_verify.c.i
 
 vtls/schannel_verify.s: vtls/schannel_verify.c.s
@@ -3435,7 +3435,7 @@ vtls/schannel_verify.s: vtls/schannel_verify.c.s
 
 # target to generate assembly for a file
 vtls/schannel_verify.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/schannel_verify.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/schannel_verify.c.s
 .PHONY : vtls/schannel_verify.c.s
 
 vtls/sectransp.obj: vtls/sectransp.c.obj
@@ -3443,7 +3443,7 @@ vtls/sectransp.obj: vtls/sectransp.c.obj
 
 # target to build an object file
 vtls/sectransp.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/sectransp.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/sectransp.c.obj
 .PHONY : vtls/sectransp.c.obj
 
 vtls/sectransp.i: vtls/sectransp.c.i
@@ -3451,7 +3451,7 @@ vtls/sectransp.i: vtls/sectransp.c.i
 
 # target to preprocess a source file
 vtls/sectransp.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/sectransp.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/sectransp.c.i
 .PHONY : vtls/sectransp.c.i
 
 vtls/sectransp.s: vtls/sectransp.c.s
@@ -3459,7 +3459,7 @@ vtls/sectransp.s: vtls/sectransp.c.s
 
 # target to generate assembly for a file
 vtls/sectransp.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/sectransp.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/sectransp.c.s
 .PHONY : vtls/sectransp.c.s
 
 vtls/vtls.obj: vtls/vtls.c.obj
@@ -3467,7 +3467,7 @@ vtls/vtls.obj: vtls/vtls.c.obj
 
 # target to build an object file
 vtls/vtls.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/vtls.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/vtls.c.obj
 .PHONY : vtls/vtls.c.obj
 
 vtls/vtls.i: vtls/vtls.c.i
@@ -3475,7 +3475,7 @@ vtls/vtls.i: vtls/vtls.c.i
 
 # target to preprocess a source file
 vtls/vtls.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/vtls.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/vtls.c.i
 .PHONY : vtls/vtls.c.i
 
 vtls/vtls.s: vtls/vtls.c.s
@@ -3483,7 +3483,7 @@ vtls/vtls.s: vtls/vtls.c.s
 
 # target to generate assembly for a file
 vtls/vtls.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/vtls.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/vtls.c.s
 .PHONY : vtls/vtls.c.s
 
 vtls/wolfssl.obj: vtls/wolfssl.c.obj
@@ -3491,7 +3491,7 @@ vtls/wolfssl.obj: vtls/wolfssl.c.obj
 
 # target to build an object file
 vtls/wolfssl.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/wolfssl.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/wolfssl.c.obj
 .PHONY : vtls/wolfssl.c.obj
 
 vtls/wolfssl.i: vtls/wolfssl.c.i
@@ -3499,7 +3499,7 @@ vtls/wolfssl.i: vtls/wolfssl.c.i
 
 # target to preprocess a source file
 vtls/wolfssl.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/wolfssl.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/wolfssl.c.i
 .PHONY : vtls/wolfssl.c.i
 
 vtls/wolfssl.s: vtls/wolfssl.c.s
@@ -3507,7 +3507,7 @@ vtls/wolfssl.s: vtls/wolfssl.c.s
 
 # target to generate assembly for a file
 vtls/wolfssl.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/wolfssl.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/vtls/wolfssl.c.s
 .PHONY : vtls/wolfssl.c.s
 
 warnless.obj: warnless.c.obj
@@ -3515,7 +3515,7 @@ warnless.obj: warnless.c.obj
 
 # target to build an object file
 warnless.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/warnless.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/warnless.c.obj
 .PHONY : warnless.c.obj
 
 warnless.i: warnless.c.i
@@ -3523,7 +3523,7 @@ warnless.i: warnless.c.i
 
 # target to preprocess a source file
 warnless.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/warnless.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/warnless.c.i
 .PHONY : warnless.c.i
 
 warnless.s: warnless.c.s
@@ -3531,7 +3531,7 @@ warnless.s: warnless.c.s
 
 # target to generate assembly for a file
 warnless.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/warnless.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/warnless.c.s
 .PHONY : warnless.c.s
 
 wildcard.obj: wildcard.c.obj
@@ -3539,7 +3539,7 @@ wildcard.obj: wildcard.c.obj
 
 # target to build an object file
 wildcard.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/wildcard.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/wildcard.c.obj
 .PHONY : wildcard.c.obj
 
 wildcard.i: wildcard.c.i
@@ -3547,7 +3547,7 @@ wildcard.i: wildcard.c.i
 
 # target to preprocess a source file
 wildcard.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/wildcard.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/wildcard.c.i
 .PHONY : wildcard.c.i
 
 wildcard.s: wildcard.c.s
@@ -3555,7 +3555,7 @@ wildcard.s: wildcard.c.s
 
 # target to generate assembly for a file
 wildcard.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/wildcard.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/wildcard.c.s
 .PHONY : wildcard.c.s
 
 x509asn1.obj: x509asn1.c.obj
@@ -3563,7 +3563,7 @@ x509asn1.obj: x509asn1.c.obj
 
 # target to build an object file
 x509asn1.c.obj:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/x509asn1.c.obj
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/x509asn1.c.obj
 .PHONY : x509asn1.c.obj
 
 x509asn1.i: x509asn1.c.i
@@ -3571,7 +3571,7 @@ x509asn1.i: x509asn1.c.i
 
 # target to preprocess a source file
 x509asn1.c.i:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/x509asn1.c.i
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/x509asn1.c.i
 .PHONY : x509asn1.c.i
 
 x509asn1.s: x509asn1.c.s
@@ -3579,7 +3579,7 @@ x509asn1.s: x509asn1.c.s
 
 # target to generate assembly for a file
 x509asn1.c.s:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/x509asn1.c.s
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(MAKE) $(MAKESILENT) -f _deps\curl-build\lib\CMakeFiles\libcurl.dir\build.make _deps/curl-build/lib/CMakeFiles/libcurl.dir/x509asn1.c.s
 .PHONY : x509asn1.c.s
 
 # Help Target
@@ -4032,6 +4032,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\Poizone\CLionProjects\HTTP_requests\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\info\CLionProjects\HTTP_requests\cmake-build-debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

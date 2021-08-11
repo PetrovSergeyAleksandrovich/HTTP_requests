@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cpr/task_1.h>
+#include <cpr/cpr.h>
 
 struct Commands{
     std::string get = "get";

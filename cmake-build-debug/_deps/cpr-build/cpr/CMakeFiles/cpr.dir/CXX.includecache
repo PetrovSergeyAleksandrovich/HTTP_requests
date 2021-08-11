@@ -6,69 +6,69 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/auth.cpp
+C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/auth.cpp
 cpr/auth.h
-C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cpr/auth.h
+C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cpr/auth.h
 
-C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cookies.cpp
+C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cookies.cpp
 cpr/cookies.h
-C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cpr/cookies.h
+C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cpr/cookies.h
 
-C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cprtypes.cpp
+C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cprtypes.cpp
 cpr/cprtypes.h
-C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cpr/cprtypes.h
+C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cpr/cprtypes.h
 algorithm
 -
 cctype
 -
 
-C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/curlholder.cpp
+C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/curlholder.cpp
 cpr/curlholder.h
-C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cpr/curlholder.h
+C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cpr/curlholder.h
 cassert
 -
 
-C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/digest.cpp
+C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/digest.cpp
 cpr/digest.h
-C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cpr/digest.h
+C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cpr/digest.h
 
-C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/error.cpp
+C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/error.cpp
 cpr/error.h
-C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cpr/error.h
+C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cpr/error.h
 curl/curl.h
 -
 
-C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/multipart.cpp
+C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/multipart.cpp
 cpr/multipart.h
-C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cpr/multipart.h
+C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cpr/multipart.h
 
-C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/ntlm.cpp
+C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/ntlm.cpp
 cpr/ntlm.h
-C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cpr/ntlm.h
+C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cpr/ntlm.h
 
-C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/parameters.cpp
+C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/parameters.cpp
 cpr/parameters.h
-C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cpr/parameters.h
+C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cpr/parameters.h
 initializer_list
 -
 string
 -
 cpr/util.h
-C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cpr/util.h
+C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cpr/util.h
 
-C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/payload.cpp
+C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/payload.cpp
 cpr/payload.h
-C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cpr/payload.h
+C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cpr/payload.h
 initializer_list
 -
 string
 -
 cpr/util.h
-C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cpr/util.h
+C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cpr/util.h
 
-C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/proxies.cpp
+C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/proxies.cpp
 cpr/proxies.h
-C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cpr/proxies.h
+C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cpr/proxies.h
 initializer_list
 -
 map
@@ -78,9 +78,9 @@ string
 utility
 -
 
-C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/session.cpp
+C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/session.cpp
 cpr/session.h
-C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cpr/session.h
+C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cpr/session.h
 algorithm
 -
 cstdlib
@@ -94,13 +94,13 @@ string
 curl/curl.h
 -
 cpr/curlholder.h
-C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cpr/curlholder.h
+C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cpr/curlholder.h
 cpr/util.h
-C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cpr/util.h
+C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cpr/util.h
 
-C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/timeout.cpp
+C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/timeout.cpp
 cpr/timeout.h
-C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cpr/timeout.h
+C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cpr/timeout.h
 limits
 -
 stdexcept
@@ -110,13 +110,13 @@ string
 type_traits
 -
 
-C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/unix_socket.cpp
+C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/unix_socket.cpp
 cpr/unix_socket.h
-C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cpr/unix_socket.h
+C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cpr/unix_socket.h
 
-C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/util.cpp
+C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/util.cpp
 cpr/util.h
-C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cpr/util.h
+C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr/cpr/util.h
 algorithm
 -
 cassert
