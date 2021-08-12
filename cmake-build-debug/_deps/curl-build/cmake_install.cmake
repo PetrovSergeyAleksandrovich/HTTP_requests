@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/curl-src
+# Install script for directory: C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/curl-src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,26 +39,26 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/curl-build/lib/cmake_install.cmake")
+  include("C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/curl-build/lib/cmake_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE FILE PERMISSIONS OWNER_READ OWNER_WRITE OWNER_EXECUTE GROUP_READ GROUP_EXECUTE WORLD_READ WORLD_EXECUTE FILES "C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/curl-build/curl-config")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE FILE PERMISSIONS OWNER_READ OWNER_WRITE OWNER_EXECUTE GROUP_READ GROUP_EXECUTE WORLD_READ WORLD_EXECUTE FILES "C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/curl-build/curl-config")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/curl-build/libcurl.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/curl-build/libcurl.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/curl-src/include/curl" FILES_MATCHING REGEX "/[^/]*\\.h$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/curl-src/include/curl" FILES_MATCHING REGEX "/[^/]*\\.h$")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/CURL/CURLTargets.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/CURL/CURLTargets.cmake"
-         "C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/curl-build/CMakeFiles/Export/lib/cmake/CURL/CURLTargets.cmake")
+         "C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/curl-build/CMakeFiles/Export/lib/cmake/CURL/CURLTargets.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/CURL/CURLTargets-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -67,16 +67,16 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/CURL" TYPE FILE FILES "C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/curl-build/CMakeFiles/Export/lib/cmake/CURL/CURLTargets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/CURL" TYPE FILE FILES "C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/curl-build/CMakeFiles/Export/lib/cmake/CURL/CURLTargets.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/CURL" TYPE FILE FILES "C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/curl-build/CMakeFiles/Export/lib/cmake/CURL/CURLTargets-debug.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/CURL" TYPE FILE FILES "C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/curl-build/CMakeFiles/Export/lib/cmake/CURL/CURLTargets-debug.cmake")
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/CURL" TYPE FILE FILES
-    "C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/curl-build/generated/CURLConfigVersion.cmake"
-    "C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/curl-build/generated/CURLConfig.cmake"
+    "C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/curl-build/generated/CURLConfigVersion.cmake"
+    "C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/curl-build/generated/CURLConfig.cmake"
     )
 endif()
 

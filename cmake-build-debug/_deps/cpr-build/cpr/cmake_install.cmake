@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr
+# Install script for directory: C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/cpr
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,11 +38,11 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/lib/libcpr.dll.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY OPTIONAL FILES "C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/lib/libcpr.dll.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug}/libcpr.dll")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE SHARED_LIBRARY FILES "C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug}/libcpr.dll")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/libcpr.dll" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/libcpr.dll")
     if(CMAKE_INSTALL_DO_STRIP)

@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <map>
 #include <cpr/cpr.h>
 
 int main ()
@@ -20,11 +19,22 @@ int main ()
 
     if(user_input == "get")
     {
-        std::string link_path = "http://httpbin.org/get?";
-        for(int i = 0; i < input_data.size(); i += 2)
+        std::string link_path = "http://httpbin.org/get";
+
+        if(input_data.size() > 0)
         {
-            link_path += (input_data[i] + '=' + input_data[i+1]) + '&';
+            link_path += "?";
+            for(int i = 0; i < input_data.size();)
+            {
+                link_path += input_data[i];
+                if(++i < input_data.size())
+                {
+                    link_path += ('=' + input_data[i]);
+                    if(++i < input_data.size()) link_path += "&";
+                }
+            }
         }
+
         std::cout << "YOUR REQUEST: " << link_path << std::endl;
         cpr::Response resp = cpr::Get(cpr::Url(link_path));
         std::cout << resp.text << std::endl;

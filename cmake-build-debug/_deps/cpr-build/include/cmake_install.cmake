@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/include
+# Install script for directory: C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/include
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,6 +38,6 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/include/cpr")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/include/cpr")
 endif()
 

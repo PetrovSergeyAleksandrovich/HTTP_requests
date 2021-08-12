@@ -1,5 +1,5 @@
-if(NOT EXISTS "C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/curl-build/install_manifest.txt")
-  message(FATAL_ERROR "Cannot find install manifest: C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/curl-build/install_manifest.txt")
+if(NOT EXISTS "C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/curl-build/install_manifest.txt")
+  message(FATAL_ERROR "Cannot find install manifest: C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/curl-build/install_manifest.txt")
 endif()
 
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -7,13 +7,13 @@ if(NOT DEFINED CMAKE_INSTALL_PREFIX)
 endif()
 message(${CMAKE_INSTALL_PREFIX})
 
-file(READ "C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/curl-build/install_manifest.txt" files)
+file(READ "C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/curl-build/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 foreach(file ${files})
   message(STATUS "Uninstalling $ENV{DESTDIR}${file}")
   if(IS_SYMLINK "$ENV{DESTDIR}${file}" OR EXISTS "$ENV{DESTDIR}${file}")
     exec_program(
-      "D:/installed_soft/CLion 2021.1.1/bin/cmake/win/bin/cmake.exe" ARGS "-E remove \"$ENV{DESTDIR}${file}\""
+      "C:/Program Files/JetBrains/CLion 2020.3/bin/cmake/win/bin/cmake.exe" ARGS "-E remove \"$ENV{DESTDIR}${file}\""
       OUTPUT_VARIABLE rm_out
       RETURN_VALUE rm_retval
       )

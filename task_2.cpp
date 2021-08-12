@@ -24,6 +24,7 @@ int main ()
     cpr::Response resp = cpr::Get(cpr::Url("http://httpbin.org/html"),
                                   cpr::Header{{"Accept", "text/html"}});
 
+    std::cout << resp.text << std::endl;
     std::cout << find_header_h1(resp.text);
 
     return 0;

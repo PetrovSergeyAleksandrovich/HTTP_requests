@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src
+# Install script for directory: C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,16 +39,16 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/curl-build/cmake_install.cmake")
+  include("C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/curl-build/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-build/cpr/cmake_install.cmake")
+  include("C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-build/cpr/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-build/include/cmake_install.cmake")
+  include("C:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-build/include/cmake_install.cmake")
 endif()
 

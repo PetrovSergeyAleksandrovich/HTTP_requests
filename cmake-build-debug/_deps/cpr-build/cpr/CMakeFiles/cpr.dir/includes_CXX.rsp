@@ -1,1 +1,1 @@
--IC:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/include -IC:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/curl-src/include -IC:/Users/info/CLionProjects/HTTP_requests/cmake-build-debug/_deps/curl-build/include/curl
+-IC:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/cpr-src/include -IC:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/curl-src/include -IC:/Users/Poizone/CLionProjects/HTTP_requests/cmake-build-debug/_deps/curl-build/include/curl
